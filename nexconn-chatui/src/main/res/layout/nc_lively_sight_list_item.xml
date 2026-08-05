@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    tools:theme="@style/NCLivelyDarkTheme"
+    android:background="?attr/nc_selected_background_color_selected">
+
+    <ImageView
+        android:id="@+id/nc_portrait"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="14dp"
+        android:scaleType="centerCrop"
+        android:src="?attr/nc_conversation_list_cell_portrait_msg_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/nc_portrait"
+        android:layout_toStartOf="@+id/nc_time"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nc_title"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            tools:text="Title"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/nc_detail"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Details"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nc_time"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/nc_portrait"
+        android:textColor="?attr/nc_text_secondary_color"
+        tools:text="18:12"
+        android:textSize="13dp" />
+
+    <View
+        android:id="@+id/nc_divider"
+        style="@style/nc_sight_horizontal_light_thin_divider"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toEndOf="@id/nc_portrait" />
+</RelativeLayout>

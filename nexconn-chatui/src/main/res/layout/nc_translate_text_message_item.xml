@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <TextView
+        android:id="@+id/nc_text"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="223dp"
+        android:padding="12dp"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textColorLink="?attr/nc_primary_color"
+        android:textSize="@dimen/nc_font_secondary_size"
+        android:breakStrategy="simple"
+        app:layout_constraintBottom_toTopOf="@+id/nc_translated_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nc_translated_text"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxWidth="223dp"
+        android:padding="12dp"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textColorLink="?attr/nc_primary_color"
+        android:textSize="@dimen/nc_font_secondary_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/nc_pb_translating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nc_text" />
+
+    <ProgressBar
+        android:id="@+id/nc_pb_translating"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:minHeight="25dp"
+        android:maxHeight="25dp"
+        android:minWidth="25dp"
+        android:maxWidth="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nc_translated_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

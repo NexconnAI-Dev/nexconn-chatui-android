@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_catalog_letter"
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nc_margin_size_10"
+        android:paddingBottom="@dimen/nc_margin_size_10"
+        android:textSize="14sp"
+        android:text="A"
+        android:textColor="?attr/nc_text_primary_color" />
+
+</LinearLayout>

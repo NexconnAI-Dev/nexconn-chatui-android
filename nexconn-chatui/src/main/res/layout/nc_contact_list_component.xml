@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color">
+
+    <ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout
+        android:id="@+id/nc_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_group_overlay"
+        android:layout_width="@dimen/nc_conversation_item_height"
+        android:layout_height="@dimen/nc_conversation_item_height"
+        android:layout_gravity="center"
+        android:background="@drawable/nc_bg_toast"
+        android:gravity="center"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <ai.nexconn.chatui.widget.SideBar
+        android:id="@+id/side_bar_contact"
+        android:layout_width="@dimen/nc_margin_size_20"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:visibility="gone" />
+
+</FrameLayout>

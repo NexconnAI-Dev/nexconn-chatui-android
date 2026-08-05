@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ConversationList -->
+    <string name="nc_conversation_list_notice_network_unavailable">الشبكة غير متاحة. تحقق من اتصالك.</string>
+    <string name="nc_conversation_list_notice_proxy_unavailable">الوكيل غير متاح</string>
+    <string name="nc_conversation_list_notice_disconnect">تعذر الوصول للخادم</string>
+    <string name="nc_conversation_list_notice_kicked">تم تسجيل الدخول إلى هذا الحساب على جهاز آخر</string>
+    <string name="nc_conversation_list_notice_connecting">جاري الإتصال...</string>
+    <string name="nc_conversation_unread_dot">99+</string>
+
+    <string name="nc_conversation_summary_content_image">[صوره]</string>
+    <string name="nc_conversation_summary_content_voice">[صوت]</string>
+    <string name="nc_conversation_summary_content_draft">[مسودة]</string>
+    <string name="nc_conversation_summary_content_file">[ملف]</string>
+    <string name="nc_conversation_summary_content_sight">[فيديو]</string>
+    <string name="nc_conversation_summary_content_combine">[سجل دردشة معاد توجيهه]</string>
+    <string name="nc_conversation_summary_content_mentioned">[@أنت]</string>
+
+    <string name="nc_ext_plugin_image">الصور</string>
+    <string name="nc_ext_plugin_file">ملفات</string>
+    <string name="nc_load_image_failed">غير قادر على تحميل الصورة</string>
+    <string name="nc_send_large_gif_failed">ملف GIF كبير جدًا بحيث لا يمكن إرساله</string>
+    <string name="nc_edit_status_progress">جارٍ التحديث...</string>
+    <string name="nc_edit_status_success">تم تحريره</string>
+    <string name="nc_edit_status_failed">فشل التحديث. انقر لإعادة المحاولة.</string>
+    <string name="nc_edit_status_retry_failed">فشلت إعادة المحاولة. حاول مرة أخرى لاحقًا.</string>
+    <string name="nc_reference_status_delete">تم حذف هذه الرسالة لك</string>
+    <string name="nc_reference_status_recall">تم حذف هذه الرسالة للجميع</string>
+    <string name="nc_edit_failed_by_remote_msg_not_exist">غير قادر على التعديل لأن الرسالة السحابية لم تعد موجودة</string>
+    <string name="nc_edit_failed_by_sensitive">فشل التحديث. يحتوي المحتوى على معلومات حساسة</string>
+    <string name="nc_edit_failed_by_expire">انتهت صلاحية التعديل</string>
+    <string name="nc_voice_press_to_input">إستمر بالضغط للتحدث</string>
+    <string name="nc_voice_release_to_send">إترك للإرسال</string>
+
+
+    <string name="nc_voice_rec">اسحب لأعلى للإلغاء</string>
+    <string name="nc_voice_cancel">أفلت للإلغاء</string>
+    <string name="nc_voice_short">التسجيل قصير جدًا</string>
+    <string name="nc_voice_too_long">التسجيل طويل جدًا</string>
+    <string name="nc_voip_occupying">الصوت قيد الاستخدام. حاول مرة أخرى لاحقًا.</string>
+
+    <!-- discussion_notification_msg -->
+    <string name="nc_conversation_list_dialog_cancel_top">إلغاء التثبيت</string>
+
+    <string name="nc_message_content_image">[صوره]</string>
+    <string name="nc_message_content_voice">[صوت]</string>
+    <string name="nc_message_content_file">[ملف]</string>
+    <string name="nc_message_content_sight">[فيديو]</string>
+
+    <string name="nc_dialog_item_message_delete_failed_msg">غير متصل. حاول مرة أخرى لاحقًا.</string>
+    <string name="nc_dialog_item_message_copy">نسخ</string>
+
+    <string name="nc_recall_success">تم حذف الرسالة</string>
+
+
+    <string name="nc_dialog_ok">تم</string>
+
+
+    <string name="nc_notice_network_unavailable">الشبكة غير متاحة. تحقق من اتصالك.</string>
+
+    <string name="nc_message_unknown">هذا النوع من الرسائل غير مدعوم بعد</string>
+    <string name="nc_message_unknown_notification">تلقيت رسالة غير معتمدة</string>
+
+    <string name="nc_file_not_exist">لم يتم العثور على الملف</string>
+
+
+    <!-- LargePictureActivity -->
+    <string name="nc_save_picture">حفظ في الصور</string>
+    <string name="nc_save_picture_at">تم الحفظ في معرض الصور</string>
+    <string name="nc_src_file_not_found">لم يتم العثور على الملف المصدر</string>
+
+
+
+
+    <string name="nc_ac_file_download_preview">معاينة الملف</string>
+    <string name="nc_ac_file_download_progress_tv">جاري التحميل...</string>
+    <string name="nc_ac_file_download_open_file_btn">فتح باستخدام تطبيق آخر</string>
+    <string name="nc_ac_file_download_open_file_direct_btn">فتح الملف</string>
+    <string name="nc_ac_file_preview_can_not_open_file">يتغذر فتح الملف</string>
+    <string name="nc_ac_file_preview_begin_download">تنزيل</string>
+    <string name="nc_ac_file_preview_downloaded">تم تنزيله</string>
+    <string name="nc_ac_file_preview_download_error">تعذر التنزيل</string>
+    <string name="nc_ac_file_preview_download_cancel">تم إلغاء التنزيل</string>
+    <string name="nc_ac_file_download_progress_pause">تم الإلغاء</string>
+    <string name="nc_ac_file_preview_download_resume">استئناف التنزيل</string>
+    <string name="nc_ac_file_url_error">عنوان URL للملف غير صالح. يتعذر التنزيل.</string>
+    <string name="nc_item_group_notification_summary">[إشعار المجموعة]</string>
+
+
+    <string name="nc_recall_failed_for_network_unavailable">غير قادر على الحذف. تحقق من اتصالك.</string>
+    <string name="nc_new_message_divider_content">رسائل سابقة</string>
+
+
+    <string name="nc_notification_error_ssl_cert_invalid">شهادة الموقع غير صالحة</string>
+
+    <!-- Message forwarding -->
+    <string name="nc_forward_by_step">إعادة توجيه واحدة تلو الأخرى</string>
+    <string name="nc_forward_combine">إعادة التوجيه كواحد</string>
+    <string name="nc_forward_no_target_selected">حدد هدف إعادة التوجيه</string>
+    <string name="nc_forward_no_message_selected">حدد الرسائل لإعادة توجيهها</string>
+    <string name="nc_combine_chat_record">سجل الدردشة</string>
+    <string name="nc_combine_group_chat">سجل دردشة المجموعة</string>
+    <string name="nc_combine_the_group_chat_of">سجل دردشة %1$s</string>
+    <string name="nc_combine_and"> و </string>
+    <string name="nc_combine_unsupported">غير قادر على إرسال. لا يمكن إعادة توجيه الرسائل المختفية والرد المقتبس والرسائل المتدفقة</string>
+    <string name="nc_combine_unsupported_step">غير قادر على الإرسال. لا يمكن إعادة توجيه رسائل الصوت/الفيديو والبث المختفي</string>
+    <string name="nc_forward_failed_message_not_supported">لا يمكن إعادة توجيه الرسائل الفاشلة أو مكالمات الصوت/الفيديو أو الرسائل المتدفقة</string>
+
+    <!--Reference Message-->
+    <string name="nc_search_file_prefix">[ملف]&#160;</string>
+
+    <string name="nc_recall_overtime">انتهت صلاحية الحذف</string>
+
+
+    <!--emoji description 128 total start-->
+    <string name="nc_emoji_smiley_face">وجه مبتسم</string><!--1-->
+    <string name="nc_emoji_grinning_face">وجه مبتسم</string><!--2-->
+    <string name="nc_emoji_smiley">مبتسم</string><!--3-->
+    <string name="nc_emoji_cute">جذاب</string><!--4-->
+    <string name="nc_emoji_winking_face">وجه غامز</string><!--5-->
+    <string name="nc_emoji_heart_eyes">عيون قلوب</string><!--6-->
+    <string name="nc_emoji_blowing_kiss">نفخ قبلة</string><!--7-->
+    <string name="nc_emoji_kiss_face">قبلة الوجه</string><!--8-->
+    <string name="nc_emoji_crazy_face">وجه مجنون</string><!--9-->
+    <string name="nc_emoji_tongue_out">اللسان خارجا</string><!--10-->
+    <string name="nc_emoji_flushed_face">وجه متوهج</string><!--11-->
+    <string name="nc_emoji_grinning_with_smiling">يبتسم إبتسامة عريضة</string><!--12-->
+    <string name="nc_emoji_pensive">متأمل</string><!--13-->
+    <string name="nc_emoji_pleased">مسرور</string><!--14-->
+    <string name="nc_emoji_dissatisfied">غير راض</string><!--15-->
+    <string name="nc_emoji_worried_face">وجه قلق</string><!--16-->
+    <string name="nc_emoji_disappointed_face">الوجه بخيبة أمل</string><!--17-->
+    <string name="nc_emoji_helpless_face">وجه يرثى له</string><!--18-->
+    <string name="nc_emoji_crying">بكاء</string><!--19-->
+    <string name="nc_emoji_laughing_tears">يضحك دموع</string><!--20-->
+    <string name="nc_emoji_sobbing">ينتحب</string><!--21-->
+    <string name="nc_emoji_sleepy_face">وجه نائم</string><!--22-->
+    <string name="nc_emoji_cold_sweat">عرق بارد</string><!--23-->
+    <string name="nc_emoji_happy_sweat">عرق سعيد</string><!--24-->
+    <string name="nc_emoji_sweat">معرق</string><!--25-->
+    <string name="nc_emoji_tired_face">وجه متعب</string><!--26-->
+    <string name="nc_emoji_weary_face">الوجه المتعب</string><!--27-->
+    <string name="nc_emoji_fearful_face">وجه خائف</string><!--28-->
+    <string name="nc_emoji_scream">صراخ</string><!--29-->
+    <string name="nc_emoji_angry_face">وجه غاضب</string><!--30-->
+    <string name="nc_emoji_mad_face">وجه غاضب</string><!--31-->
+    <string name="nc_emoji_confounded_face">وجه مرتبك</string><!--32-->
+    <string name="nc_emoji_big_grin">ابتسامة كبيرة</string><!--33-->
+    <string name="nc_emoji_hungry">جوعان</string><!--34-->
+    <string name="nc_emoji_mask_face">قناع الوجه</string><!--35-->
+    <string name="nc_emoji_sunglasses">لابس نظارة</string><!--36-->
+    <string name="nc_emoji_sleeping">نائم</string><!--37-->
+    <string name="nc_emoji_shocked_face">وجه مصدوم</string><!--38-->
+    <string name="nc_emoji_dizzy_face">وجه دائخ</string><!--39-->
+    <string name="nc_emoji_purple_devil">وجه شيطاني</string><!--40-->
+    <string name="nc_emoji_devil">وجه شيطاني</string><!--41-->
+    <string name="nc_emoji_surprised_face">وجه متفاجئ</string><!--42-->
+    <string name="nc_emoji_grimacing_face">وجه متفاجئ</string><!--43-->
+    <string name="nc_emoji_confused">مشوش</string><!--44-->
+    <string name="nc_emoji_mouthless">بدون فم</string><!--45-->
+    <string name="nc_emoji_halo">هالو</string><!--46-->
+    <string name="nc_emoji_smirking_face">وجه حذق</string><!--47-->
+    <string name="nc_emoji_expressionless_face">وجه بلا تعابير</string><!--48-->
+    <string name="nc_emoji_see_no_monkey">قرد1</string><!--49-->
+    <string name="nc_emoji_hear_no_monkey">قرد2</string><!--50-->
+    <string name="nc_emoji_no_speaking">ممنوع الكلام</string><!--51-->
+    <string name="nc_emoji_alien">كائن فضائي</string><!--52-->
+    <string name="nc_emoji_pile_of_poo">كومة</string><!--53-->
+    <string name="nc_emoji_broken_heart">قلب مجروح</string><!--54-->
+    <string name="nc_emoji_fire">نار</string><!--55-->
+    <string name="nc_emoji_anger">غضب</string><!--56-->
+    <string name="nc_emoji_zzz">نعاس</string><!--57-->
+    <string name="nc_emoji_prohibited">محظور</string><!--58-->
+    <string name="nc_emoji_star">نجمة</string><!--59-->
+    <string name="nc_emoji_lightning_bolt">برق</string><!--60-->
+    <string name="nc_emoji_crescent_moon">الهلال</string><!--61-->
+    <string name="nc_emoji_sunny">مشمس</string><!--62-->
+    <string name="nc_emoji_cloudy">غائم</string><!--63-->
+    <string name="nc_emoji_cloud">غيم</string><!--64-->
+    <string name="nc_emoji_snowflake">رقائق ثلج</string><!--65-->
+    <string name="nc_emoji_umbrella">مظلة</string><!--66-->
+    <string name="nc_emoji_snowman">الرجل الثلجي</string><!--67-->
+    <string name="nc_emoji_thumbs_up">رضى</string><!--68-->
+    <string name="nc_emoji_thumbs_down">غير راض</string><!--69-->
+    <string name="nc_emoji_shake_hand">هزة اليد</string><!--70-->
+    <string name="nc_emoji_ok_hand">يد أتفق</string><!--71-->
+    <string name="nc_emoji_oncoming_fist">قبضة قادمة</string><!--72-->
+    <string name="nc_emoji_raised_fist">قبضة مرفوعة</string><!--73-->
+    <string name="nc_emoji_victory_hand">يد الفوز</string><!--74-->
+    <string name="nc_emoji_raised_hand">يد مرفوعة</string><!--75-->
+    <string name="nc_emoji_folded_hands">الأيدي مطوية</string><!--76-->
+    <string name="nc_emoji_pointing_up">مشيرا أعلى</string><!--77-->
+    <string name="nc_emoji_clapping_hands">تصفيق</string><!--78-->
+    <string name="nc_emoji_flexed_biceps">عضلات</string><!--79-->
+    <string name="nc_emoji_family">أسرة</string><!--80-->
+    <string name="nc_emoji_couple">زوجان</string><!--81-->
+    <string name="nc_emoji_baby_angel">الطفل الملاك</string><!--82-->
+    <string name="nc_emoji_horse">حصان</string><!--83-->
+    <string name="nc_emoji_dog">كلب</string><!--84-->
+    <string name="nc_emoji_pig">خنزير</string><!--85-->
+    <string name="nc_emoji_ghost">شبح</string><!--86-->
+    <string name="nc_emoji_rose">وردة</string><!--87-->
+    <string name="nc_emoji_sunflower">دوار الشمس</string><!--88-->
+    <string name="nc_emoji_pine_tree">شجرة الصنوبر</string><!--89-->
+    <string name="nc_emoji_christmas_tree">شجرة الميلاد</string><!--90-->
+    <string name="nc_emoji_wrapped_gift">لف هدية</string><!--91-->
+    <string name="nc_emoji_party_popper">حفلة</string><!--92-->
+    <string name="nc_emoji_money_bag">حقيبة المال</string><!--93-->
+    <string name="nc_emoji_birthday_cake">كعكة عيد الميلاد</string><!--94-->
+    <string name="nc_emoji_barbecue">الشواء</string><!--95-->
+    <string name="nc_emoji_cooked_rice">ارز مطبوخ</string><!--96-->
+    <string name="nc_emoji_ice_cream">آيسكريم</string><!--97-->
+    <string name="nc_emoji_chocolate_bar">قطعة شوكولاتة</string><!--98-->
+    <string name="nc_emoji_watermelon">البطيخ</string><!--99-->
+    <string name="nc_emoji_wine_glass">كأس</string><!--100-->
+    <string name="nc_emoji_cheers">المرحى</string><!--101-->
+    <string name="nc_emoji_coffee">قهوة</string><!--102-->
+    <string name="nc_emoji_basketball">كرة سلة</string><!--103-->
+    <string name="nc_emoji_soccer_ball">كرة القدم</string><!--104-->
+    <string name="nc_emoji_snowboarder">المتزلج</string><!--105-->
+    <string name="nc_emoji_microphone">ميكروفون</string><!--106-->
+    <string name="nc_emoji_musical_note">نوتة موسيقية</string><!--107-->
+    <string name="nc_emoji_game_die">لعبة الموت</string><!--108-->
+    <string name="nc_emoji_mahjone_red_dragon">جونغ التنين الاحمر</string><!--109-->
+    <string name="nc_emoji_crown">تاج</string><!--110-->
+    <string name="nc_emoji_lipstick">أحمر الشفاه</string><!--111-->
+    <string name="nc_emoji_kiss">قبلة</string><!--112-->
+    <string name="nc_emoji_ring">حلقة</string><!--113-->
+    <string name="nc_emoji_books">كتب</string><!--114-->
+    <string name="nc_emoji_graduation_cap">قبعة التخرج</string><!--115-->
+    <string name="nc_emoji_pencil">قلم</string><!--116-->
+    <string name="nc_emoji_house_with_garden">منزل مع حديقة</string><!--117-->
+    <string name="nc_emoji_shower">دش</string><!--118-->
+    <string name="nc_emoji_light_bulb">المصباح الكهربائي</string><!--119-->
+    <string name="nc_emoji_telephone_receiver">الهاتف استقبال</string><!--120-->
+    <string name="nc_emoji_loudspeaker">مكبر الصوت</string><!--121-->
+    <string name="nc_emoji_clock">ساعة حائط</string><!--122-->
+    <string name="nc_emoji_alarm_clock">منبه</string><!--123-->
+    <string name="nc_emoji_hourglass">الساعة الرملية</string><!--124-->
+    <string name="nc_emoji_bomb">قنبلة</string><!--125-->
+    <string name="nc_emoji_pistol">مسدس</string><!--126-->
+    <string name="nc_emoji_capsule">كبسولة</string><!--127-->
+    <string name="nc_emoji_rocket">صاروخ</string><!--128-->
+    <string name="nc_emoji_globe">كره ارضيه</string><!--129-->
+    <string name="nc_emoji_love_heart">حب</string><!--130-->
+
+    <!--emoji description 128 total end-->
+
+    <string name="nc_notification_channel_name">رسالة جديدة</string>
+    <string name="nc_notification_ticker_text">لديك رسالة جديدة</string>
+
+    <string name="nc_date_yesterday">أمس</string>
+    <string name="nc_date_monday">الإثنين</string>
+    <string name="nc_date_tuesday">الثلاثاء</string>
+    <string name="nc_date_wednesday">الأربعاء</string>
+    <string name="nc_date_thursday">الخميس</string>
+    <string name="nc_date_friday">الجمعة</string>
+    <string name="nc_date_saturday">السبت</string>
+    <string name="nc_date_sunday">الأحد</string>
+    <string name="nc_date_am">ص</string>
+    <string name="nc_date_morning">ص</string>
+    <string name="nc_date_noon">م</string>
+    <string name="nc_date_pm">م</string>
+    <string name="nc_date_night">م</string>
+    <string name="nc_yesterday_format">أمس</string>
+
+    <string name="nc_default_message">هذا النوع من الرسائل غير مدعوم بعد</string>
+    <string name="nc_picsel_video_corrupted">غير قادر على مشاركة فيديو تالف</string>
+    <string name="nc_read_receipt">يقرأ</string>
+    <string name="nc_unread_receipt">غير مقروءة</string>
+    <string name="nc_message_none_user_read">0 قراءة</string>
+    <string name="nc_message_all_user_read">قراءة كل شيء</string>
+
+    <string name="nc_dialog_edit_message_content">أنت تقوم بتحرير رسالة أخرى. إذا تابعت، سيتم فقدان التعديلات السابقة.</string>
+    <string name="nc_dialog_edit_message_is_delete">تم حذف الرسالة ولا يمكن حفظها</string>
+    <string name="nc_cancel">إلغاء</string>
+    <string name="nc_confirm">تم</string>
+    <string name="nc_back">عودة</string>
+    <string name="nc_prompt">يلاحظ</string>
+    <string name="nc_not_prompt">لا تظهر مرة أخرى</string>
+
+
+    <string name="nc_unread_message">{0} رسالة جديدة</string>
+
+    <string name="nc_permission_grant_needed">قم بتشغيل هذا الإذن في الإعدادات</string>
+    <string name="nc_permission_microphone">(ميكروفون)</string>
+    <string name="nc_permission_name_camera">الكاميرا</string>
+    <string name="nc_permission_name_microphone">الميكروفون</string>
+    <string name="nc_permission_name_storage">التخزين</string>
+    <string name="nc_permission_name_photos">الصور</string>
+    <string name="nc_permission_name_videos">الفيديو</string>
+    <string name="nc_permission_name_partial_photos">صور محددة</string>
+    <string name="nc_permission_name_location">الموقع</string>
+    <string name="nc_permission_name_bluetooth">البلوتوث</string>
+    <string name="nc_permission_name_phone">الهاتف</string>
+    <string name="nc_permission_name_overlay">الظهور فوق التطبيقات الأخرى</string>
+    <string name="nc_picture_camera_roll">لفة الكاميرا</string>
+
+    <string name="nc_picture_camera_roll_num">%1$s (%2$d)</string>
+    <string name="nc_picture_cancel"> إلغاء </string>
+    <string name="nc_picture_take_picture"> تصوير </string>
+    <string name="nc_picture_min_video_num">حدد %1$d مقطع فيديو على الأقل</string>
+    <string name="nc_picture_message_max_num_fir">يجوز لاختيار على الأكثر</string>
+    <string name="nc_picture_message_max_num">%1$d يجوز لاختيار على الأكثر من الصور</string>
+    <string name="nc_picture_preview"> معاينة </string>
+    <string name="nc_picture_please">انتظر من فضلك...</string>
+    <string name="nc_picture_empty_title">لا توجد صور أو مقاطع فيديو</string>
+    <string name="nc_picture_empty">استخدم الكاميرا لالتقاط الصور أو مقاطع الفيديو</string>
+    <string name="nc_picture_min_img_num">حدد %1$d من الصور على الأقل</string>
+    <string name="nc_picture_gif_tag">GIF</string>
+    <string name="nc_picture_audio">تم رفض إذن الميكروفون</string>
+    <string name="nc_picture_jurisdiction">تم رفض إذن التخزين</string>
+    <string name="nc_picture_camera">تم رفض إذن الكاميرا</string>
+    <string name="nc_picture_record_video"> تسجيل الفيديو </string>
+    <string name="nc_picture_photograph"> تصوير </string>
+    <string name="nc_picture_long_chart"> طويل </string>
+    <string name="nc_picture_prompt">يلاحظ</string>
+    <string name="nc_picture_prompt_content">هل تريد الحفظ في الصور؟</string>
+    <string name="nc_picture_error">الصورة تالفة</string>
+    <string name="nc_picture_video_error">الفيديو تالف</string>
+    <string name="nc_picture_confirm"> تأكيد </string>
+    <string name="nc_picture_original_image">أصلي</string>
+    <string name="nc_picture_original_image_size">أصلي (%1$s)</string>
+    <string name="nc_picture_send"> إرسال </string>
+    <string name="nc_picture_select">يختار</string>
+    <string name="nc_picture_data_exception">غير قادر على تحميل بيانات الألبوم...</string>
+    <string name="nc_picture_message_max_num_sec">من الصور</string>
+    <string name="nc_picture_send_num">إرسال</string>
+
+
+
+
+    <string name="nc_conversation_remote_side_is_typing">يكتب ...</string>
+    <string name="nc_conversation_remote_side_speaking">يتحدث...</string>
+
+    <string name="nc_mention_messages">@ %s</string>
+    <string name="nc_media_upload_error">غير قادر على تحميل ملف بحجم 0 كيلو بايت</string>
+    <string name="nc_load_local_message">خطأ في الشبكة. عرض سجل الدردشة المحلية؟</string>
+
+    <string name="nc_message_too_long">الرسالة طويلة جدًا بحيث لا يمكن إرسالها</string>
+    <string name="nc_gif_message_too_large">ملف GIF كبير جدًا بحيث لا يمكن إرساله</string>
+    <string name="nc_upload_file_too_large">الملف كبير جدًا بحيث لا يمكن تحميله</string>
+
+    <string name="nc_permission_request_failed">غير قادر على الحصول على إذن</string>
+
+    <string name="nc_conversation_list_title">قوائم الدردشة</string>
+    <string name="nc_recalled_message">حذف رسالة</string>
+    <string name="srl_content_empty">" طريقة عرض المحتوى في SmartRefreshLayout فارغة. هل نسيت إضافته في ملف تخطيط xml؟ "</string>
+
+
+    <!-- group features -->
+    <string name="nc_input_length_invalid">يجب أن يكون من 1 إلى 64 حرفًا</string>
+    <string name="nc_create_group_failure">غير قادر على إنشاء المجموعة</string>
+
+    <string name="nc_group_info">معلومات المجموعة(%d)</string>
+    <string name="nc_group_members_label">أعضاء المجموعة(%d)</string>
+    <string name="nc_my_nickname_in_group">لقبي في المجموعة</string>
+    <string name="nc_dissolve_group">حل المجموعة</string>
+
+
+    <string name="nc_nickname_label">كنية</string>
+    <string name="nc_nickname_hint">أدخل اسمًا مستعارًا</string>
+
+
+    <string name="nc_leave_group">مغادرة المجموعة</string>
+
+    <string name="nc_admin">مشرف</string>
+    <string name="nc_group_owner">مالك</string>
+
+    <string name="nc_edit_permission">يمكن فقط لمالكي المجموعة ومسؤوليها التعديل</string>
+
+    <string name="nc_set_remark_name">تعيين اللقب</string>
+    <string name="nc_set_nick_name">تغيير اللقب</string>
+
+    <string name="nc_group_dismiss_success">تم حلها بنجاح</string>
+    <string name="nc_group_dismiss_failed">تعذر استبعاد المجموعة</string>
+    <string name="nc_group_quit_success">المجموعة اليسرى</string>
+    <string name="nc_group_quit_failed">غير قادر على مغادرة المجموعة المجموعة</string>
+    <string name="nc_set_success">تم الحفظ</string>
+    <string name="nc_set_failed">تعذر الحفظ</string>
+    <string name="nc_group_members_kick_success">تمت إزالة العضو</string>
+    <string name="nc_group_members_kick_failed">تعذر إزالة العضو</string>
+    <string name="nc_invite_join_group_success">تم إرسال الدعوة</string>
+    <string name="nc_invite_join_group_failed">تعذر إرسال دعوة</string>
+
+    <string name="nc_group_notice_success">تم نشر الإعلان</string>
+    <string name="nc_group_notice_failed">تعذر النشر إعلان</string>
+
+    <string name="nc_group_name_cannot_be_empty">لا يمكن أن يكون اسم المجموعة فارغًا</string>
+    <string name="nc_no_permission_to_modify_group_info">لا يوجد إذن التحديث</string>
+    <string name="nc_max_group_members_selection">يمكنك تحديد ما يصل إلى %d أعضاء</string>
+
+    <string name="nc_gender_man">ذكر</string>
+    <string name="nc_gender_female">أنثى</string>
+
+    <string name="nc_add_as_friend">إضافة أصدقاء</string>
+    <string name="nc_reject_request">رفض الطلب</string>
+    <string name="nc_passed">تم قبوله</string>
+    <string name="nc_reject">رفض</string>
+    <string name="nc_friend_nickname_hint">إضافة اللقب</string>
+    <string name="nc_remark">الاسم المستعار</string>
+    <string name="nc_unknow_type">غير معروف</string>
+    <string name="nc_add_friend_hint">أضف رسالة (اختياري)</string>
+    <string name="nc_send_apply_success">تم إرسال طلب الصداقة</string>
+    <string name="nc_send_apply_fail">تعذر إرسال طلب صداقة</string>
+    <string name="nc_delete_friend_title">احذف جهة الاتصال \"%1$s\" وامسح سجل الدردشة معهم</string>
+
+    <string name="nc_just_now">الآن</string>
+    <string name="nc_within_three_days">في غضون ثلاثة أيام</string>
+    <string name="nc_three_days_ago">منذ ثلاثة أيام</string>
+
+    <string name="nc_rejected">تم الرفض</string>
+    <string name="nc_expired">انتهت الصلاحية</string>
+    <string name="nc_added">تمت الإضافة</string>
+    <string name="nc_waiting">في انتظار التحقق</string>
+    <string name="nc_app_id">معرف فريد</string>
+    <string name="nc_request_add_friend">إضافة طلب صداقة</string>
+
+    <!--5.12.2-->
+    <string name="nc_add_success">تمت الإضافة</string>
+    <string name="nc_add_failed">غير قادر على الإضافة</string>
+    <string name="nc_remove_success">تمت الإزالة</string>
+    <string name="nc_remove_failed">غير قادر على إزالة</string>
+    <string name="nc_group_transfer_success">تم نقل الملكية</string>
+    <string name="nc_group_transfer_failed">فشل النقل</string>
+    <string name="nc_invite_confirm_failed">غير قادر على قبول الدعوة</string>
+    <string name="nc_invite_reject_failed">غير قادر على رفض الدعوة</string>
+
+    <string name="nc_group_permission_owner_only">مالك المجموعة</string>
+    <string name="nc_group_permission_owner_and_admins">المالك والمشرفين</string>
+    <string name="nc_group_permission_all">الجميع</string>
+    <string name="nc_group_edit_permission_owner_only">يمكن للمالك فقط التعديل</string>
+    <string name="nc_invite_join_group_send">تم إرسال الدعوة. يمكنهم الانضمام بعد القبول.</string>
+    <string name="nc_invite_join_group_send_need_manange">تم إرسال الدعوة. يجب على المسؤول الموافقة عليه قبل الانضمام.</string>
+
+    <string name="nc_group_transfer_hint">هل تريد جعل \"%1$s\" المالك الجديد؟ ستفقد إمكانية وصول المالك.</string>
+    <string name="nc_remove_manager_hint">هل تريد إزالة \"%1$s\" من المشرفين؟</string>
+    <string name="nc_remove_follow_hint">هل تريد إزالة \"%1$s\" من المفضلة؟ لن تحصل على تنبيهات مميزة لرسائلهم بعد الآن.</string>
+    <string name="nc_publish_announcement_hint">هذا الإعلان سوف يخطر جميع الأعضاء. هل تريد نشره؟</string>
+
+    <string name="nc_group_nickname">اللقب في المجموعة</string>
+
+    <string name="nc_group_follows">إدارة المجموعة</string>
+    <string name="nc_group_mention_all_members">الجميع</string>
+
+    <string name="nc_joined">تم الانضمام</string>
+    <string name="nc_invitee_pending">الدعوة معلقة</string>
+    <string name="nc_manager_pending">المشرف في انتظار</string>
+    <string name="nc_manager_rejected">رفض المشرف</string>
+    <string name="nc_invitee_rejected">تم رفض المدعو</string>
+
+    <string name="nc_all_requests">جميع الطلبات</string>
+    <string name="nc_pending_confirmation">قيد التأكيد</string>
+    <string name="nc_completed">تمت المعالجة</string>
+    <string name="nc_group_application_sent">تم إرسال طلب الانضمام</string>
+    <string name="nc_group_invitation_sent">لقد قمت بدعوة %1$s</string>
+    <string name="nc_group_invitation_received_inviter">%1$s تمت دعوتك</string>
+    <string name="nc_group_application_received_invitation">%1$s تمت دعوته %2$s</string>
+    <string name="nc_group_application_received_request">%1$s طلب الانضمام</string>
+
+    <string name="nc_remove">إزالة</string>
+    <string name="nc_loading_saving">توفير...</string>
+    <string name="nc_content_contain_sensitive">فشل الإجراء. يحتوي المحتوى على معلومات حساسة</string>
+    <!--5.12.2-->
+
+    <!--Speech to Text-->
+    <string name="nc_cancel_speech_to_text">إلغاء النسخ</string>
+    <string name="nc_speech_to_text_failed">فشل النسخ</string>
+    <string name="nc_speech_to_text_network_error">الشبكة غير متاحة. تحقق من اتصالك وحاول مرة أخرى.</string>
+    <string name="nc_speech_to_text_unsupported_format">لا يمكن نسخ هذه الرسالة الصوتية</string>
+    <string name="nc_copy">نسخ</string>
+    <!--Speech to Text-->
+
+    <!--  NewUIDesign  -->
+    <string name="nc_set_top">تثبيت</string>
+    <string name="nc_delete_for_me">حذف لي</string>
+    <string name="nc_recall">حذف للجميع</string>
+    <string name="nc_delete">حذف</string>
+    <string name="nc_reference">اقتباس</string>
+    <string name="nc_edit">تعديل</string>
+    <string name="nc_multi_select">اختيار متعدد</string>
+    <!--  NewUIDesign  -->
+    <string name="nc_plugin_sight">فيديو قصير</string>
+    <string name="nc_sight_reminder">اضغط باستمرار لتسجيل فيديو</string>
+    <string name="nc_sight_download_failed">فشل التنزيل. انقر لإعادة المحاولة.</string>
+    <string name="nc_sight_record_too_short_time">التسجيل قصير جدًا. حاول مرة أخرى.</string>
+    <string name="nc_save_video">حفظ الفيديو</string>
+    <string name="nc_save_video_success">تم حفظ الفيديو</string>
+    <string name="nc_sight_file_expired">تم حذف الفيديو أو انتهت صلاحيته</string>
+    <string name="nc_video_play_error_open_system_player">تعذر تشغيل هذا الفيديو. هل تريد فتحه في مشغل النظام لديك؟</string>
+
+    <!-- Keys restored from git history - referenced in code/layouts but were accidentally deleted -->
+    <string name="nc_join_chatroom_failure">غير قادر على الانضمام إلى القناة المفتوحة</string>
+    <string name="nc_picsel_selected_max_time_span_with_param">غير قادر على مشاركة مقاطع فيديو أطول من %s دقيقة</string>
+    <string name="nc_picsel_selected_max_second_span_with_param">غير قادر على مشاركة مقاطع فيديو أطول من %s ثانية</string>
+    <string name="nc_exceeded_max_limit_100">يمكنك تحديد ما يصل إلى 100 سجل دردشة</string>
+    <string name="nc_delete_friend_success">تم حذف الصديق</string>
+    <string name="nc_delete_friend_failed">غير قادر على حذف الصديق</string>
+    <string name="nc_reject_success">انخفض</string>
+    <string name="nc_action_bar_back">عودة</string>
+    <string name="nc_action_bar_ok">حسنا</string>
+    <string name="nc_edit_status_expired">تحرير انتهت صلاحيته</string>
+    <string name="nc_conversation_list_empty_prompt">لا توجد محادثات بعد</string>
+    <string name="nc_you_recalled_edit">تحرير مرة أخرى</string>
+    <string name="nc_search">بحث</string>
+    <string name="nc_choose_members">حدد الأعضاء</string>
+    <string name="nc_ext_common_phrase">ردود سريعة</string>
+    <string name="nc_mention_title_choose_members">حدد الأصدقاء</string>
+    <string name="nc_clear">مسح</string>
+    <string name="nc_send">إرسال</string>
+    <string name="nc_accept">قبول</string>
+    <string name="nc_expand">يوسع</string>
+    <string name="nc_sight_list_title">ملفات الدردشة</string>
+    <string name="nc_combine_load_failed">غير قادر على تحميل الرسائل المعاد توجيهها</string>
+    <string name="nc_read_receipt_status">يقرأ</string>
+    <string name="nc_create_group">مجموعة جديدة</string>
+    <string name="nc_group_name_hint">املأ اسم المجموعة</string>
+    <string name="nc_group_name">اسم المجموعة</string>
+    <string name="nc_friends">اتصالات</string>
+    <string name="nc_search_friends">صديق يبحث</string>
+    <string name="nc_new_friends">أصدقاء جدد</string>
+    <string name="nc_add_friend">أضف أصدقاء</string>
+    <string name="nc_user_does_not_exist">هذا المستخدم غير موجود</string>
+    <string name="nc_group_no_special_attention">لا يوجد مفضلة بعد</string>
+    <string name="nc_no_data">لا توجد بيانات</string>
+    <string name="nc_group_management">إدارة المجموعة</string>
+    <string name="nc_group_managers">المشرفين</string>
+    <string name="nc_group_add_member">إضافة أعضاء</string>
+    <string name="nc_my_groups">مجموعاتي</string>
+    <string name="nc_user_not_found">لم يتم العثور على مستخدمين</string>
+    <string name="nc_group_avatar">صورة جماعية</string>
+    <string name="nc_group_announcement">إنشاء إشعار</string>
+    <string name="nc_nickname_description">هذا اللقب مرئي للجميع في المجموعة</string>
+    <string name="nc_group_notice_hint">أدخل إعلانا</string>
+    <string name="nc_empty_notice">لا يوجد إعلان حتى الآن</string>
+    <string name="nc_group_title">اسم المجموعة</string>
+    <string name="nc_group_remark">الاسم المستعار للمجموعة</string>
+    <string name="nc_group_name_edit">تعديل اسم المجموعة</string>
+    <string name="nc_group_mention_title">حدد الأشخاص الذين تريد ذكرهم</string>
+    <string name="nc_group_add_manager">إضافة مشرفين</string>
+    <string name="nc_group_select_member">اختر أعضاء المجموعة</string>
+    <string name="nc_group_edit_info_permission">من يمكنه تعديل معلومات المجموعة؟</string>
+    <string name="nc_group_add_member_permission">من يمكنه إضافة أعضاء للمجموعة؟</string>
+    <string name="nc_group_remove_member_permission">من يمكنه إزالة أعضاء المجموعة</string>
+    <string name="nc_group_edit_member_info_permission">من يمكنه تعديل معلومات الأعضاء</string>
+    <string name="nc_group_invitation_confirmation">موافقة المشرف</string>
+    <string name="nc_group_transfer">نقل المجموعة</string>
+    <string name="nc_chat_pin">تثبيت المحادثة</string>
+    <string name="nc_notification_mute">الإخطارات</string>
+    <string name="nc_loadmore_loading">قيد التحميل...</string>
+    <string name="nc_message_read_receipt_status">قراءة الإيصالات</string>
+    <string name="nc_remove_member">إزالة العضو</string>
+    <string name="nc_user_profile">ملف تعريف المستخدم</string>
+    <string name="nc_gender_edit">تحرير الجنس</string>
+    <string name="nc_user_info">معلومات شخصية</string>
+    <string name="nc_head">الصورة الرمزية</string>
+    <string name="nc_app">رقم الطلب</string>
+    <string name="nc_gender">الجنس</string>
+    <string name="nc_start_chat">محادثة</string>
+    <string name="nc_start_audio">مكالمة صوتية</string>
+    <string name="nc_start_video">مكالمة فيديو</string>
+    <string name="nc_delete_friend">حذف جهة الاتصال</string>
+    <string name="nc_all_friend_request">جميع طلبات الصداقة</string>
+    <string name="nc_my_received_request">الطلبات المستلمة</string>
+    <string name="nc_my_sent_request">الطلبات المرسلة</string>
+    <string name="nc_group_member_remark">لقب العضو</string>
+    <string name="nc_group_note_hint">أدخل اسمًا مستعارًا للمجموعة</string>
+    <string name="nc_group_notification">إشعارات المجموعة</string>
+    <string name="nc_group_transfer_title">نقل المجموعة</string>
+    <string name="nc_message_content_mentioned">[@أنت]</string>
+    <string name="nc_item_invitation">مدعو</string>
+    <string name="nc_item_you">أنت </string>
+    <string name="nc_item_you_invitation">لقد دعوت</string>
+    <string name="nc_item_you_remove_self">تمت إزالتك بواسطة</string>
+    <string name="nc_item_remove_group_member">تمت إزالته</string>
+    <string name="nc_item_remove">قام بالإزالة من المجموعة </string>
+    <string name="nc_item_created_group">أنشأت المجموعة</string>
+    <string name="nc_item_change_group_name">غيّر اسم المجموعة إلى</string>
+    <string name="nc_item_quit_groups">غادر المجموعة</string>
+    <string name="nc_item_dismiss_groups">رفض المجموعة</string>
+    <string name="nc_item_join_group">انضم إلى المجموعة</string>
+    <string name="nc_item_you_created_group">لقد أنشأت المجموعة</string>
+    <string name="nc_item_divided_string">,</string>
+    <string name="nc_reference_link">[رساله]</string>
+
+</resources>

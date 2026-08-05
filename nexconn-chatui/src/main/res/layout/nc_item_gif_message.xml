@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ai.nexconn.chatui.widget.NCMessageFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <ImageView
+        android:id="@+id/nc_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="?attr/nc_text_secondary_color"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nc_start_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:src="?attr/nc_conversation_msg_cell_gif_needload_img" />
+
+        <ImageView
+            android:id="@+id/nc_download_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="?attr/nc_conversation_msg_cell_gif_loadfailed_img" />
+
+        <ProgressBar
+            android:id="@+id/nc_pre_progress"
+            android:layout_width="@dimen/nc_gif_item_progress_size"
+            android:layout_height="@dimen/nc_gif_item_progress_size"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/nc_gif_item_pre_progress_color"
+            android:visibility="visible" />
+
+        <ai.nexconn.chatui.widget.CircleProgressView
+            android:id="@+id/nc_gif_progress"
+            android:layout_width="@dimen/nc_gif_item_progress_size"
+            android:layout_height="@dimen/nc_gif_item_progress_size"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/nc_length"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:textColor="@color/nc_white_color" />
+    </LinearLayout>
+
+</ai.nexconn.chatui.widget.NCMessageFrameLayout>

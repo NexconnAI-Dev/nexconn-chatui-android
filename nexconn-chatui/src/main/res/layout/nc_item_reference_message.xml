@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nc_reference_root_view"
+    android:layout_width="@dimen/nc_reference_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/nc_reference_margin_top"
+        android:layout_marginEnd="@dimen/nc_reference_margin_right"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/nc_reference_vertical_mark"
+            android:layout_width="@dimen/nc_reference_divider_width"
+            android:layout_height="@dimen/nc_reference_divider_height"
+            android:layout_marginStart="@dimen/nc_reference_divider_margin_left"
+            android:layout_marginTop="@dimen/nc_reference_divider_margin_top"
+            android:layout_marginEnd="@dimen/nc_reference_divider_margin_right"
+            android:background="@color/nc_reference_sent_mark_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nc_msg_tv_reference_name"
+                style="@style/TextStyle.Alignment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nc_reference_name_margin_left"
+                android:layout_marginEnd="@dimen/nc_reference_name_margin_right"
+                android:layout_toEndOf="@id/nc_reference_vertical_mark"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="start|top"
+                android:maxLines="1"
+                android:textColor="@color/nc_reference_title_color"
+                android:textSize="@dimen/nc_reference_content_size" />
+
+            <ai.nexconn.chatui.widget.NCMessageFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/nc_reference_name_margin_left">
+
+                <TextView
+                    android:id="@+id/nc_msg_tv_reference_file_name"
+                    style="@style/TextStyle.Alignment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="top"
+                    android:ellipsize="middle"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:textColor="@color/nc_reference_file_name"
+                    android:textSize="@dimen/nc_reference_content_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/nc_msg_tv_reference_content"
+                    style="@style/TextStyle.Alignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/nc_reference_title_color"
+                    android:textColorLink="?attr/nc_link_color"
+                    android:textSize="@dimen/nc_reference_name_size" />
+            </ai.nexconn.chatui.widget.NCMessageFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/nc_msg_iv_reference"
+        android:layout_width="@dimen/nc_reference_image_size"
+        android:layout_height="@dimen/nc_reference_image_size"
+        android:layout_marginStart="@dimen/nc_margin_size_14"
+        android:layout_marginTop="@dimen/nc_margin_size_4"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="?attr/nc_line_background_color" />
+
+    <ai.nexconn.chatui.widget.NCMessageFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_reference_content_margin_left"
+        android:layout_marginTop="@dimen/nc_reference_content_margin_top"
+        android:layout_marginEnd="@dimen/nc_reference_content_margin_right">
+
+        <TextView
+            android:id="@+id/nc_msg_tv_reference_send_content"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/nc_reference_content_send_margin_bottom"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textColorLink="?attr/nc_link_color"
+            android:textSize="@dimen/nc_reference_content_send_size" />
+
+    </ai.nexconn.chatui.widget.NCMessageFrameLayout>
+
+</LinearLayout>

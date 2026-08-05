@@ -1,0 +1,11 @@
+{
+  "chat_sdk_version": "26.3.0",
+  "chatui_version": "26.3.0",
+  "imkit_baseline": "b11fa0c6f3dd2df199c47e825c596d1aef440ee3",
+  "license": "Apache-2.0",
+  "release_type": "Dev",
+  "source_commit": "fc465708a956b058cb6150d4aec9c56199b8403f",
+  "source_digest": "e29c79d6c5a3769cb6e1732d01080ca545e7d8c8d44214fffc30a9c752e211aa",
+  "upstream_build": 74,
+  "upstream_job": "Android/Android-Nexconn-SDK"
+}

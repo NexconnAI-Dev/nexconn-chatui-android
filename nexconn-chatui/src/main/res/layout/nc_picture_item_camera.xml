@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ai.nexconn.chatui.picture.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/picture_color_light_grey"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+    <TextView
+        android:id="@+id/tvCamera"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:drawableTop="@drawable/nc_picture_icon_camera"
+        android:gravity="center"
+        android:text="@string/nc_picture_take_picture"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14dp" />
+
+</ai.nexconn.chatui.picture.widget.SquareRelativeLayout>

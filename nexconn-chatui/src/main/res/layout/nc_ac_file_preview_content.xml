@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nc_ac_layout_preview_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <LinearLayout
+        android:id="@+id/nc_ac_ll_download_file_detail_info"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nc_ac_iv_file_type_image"
+            android:layout_width="@dimen/nc_file_preview_image_size"
+            android:layout_height="@dimen/nc_file_preview_image_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/nc_ac_tv_file_name"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/nc_file_preview_name_margin_top"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="@dimen/nc_file_preview_name_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nc_ac_tv_file_size"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/nc_file_preview_margin_bottom"
+        android:layout_marginTop="@dimen/nc_file_preview_margin_top"
+        android:textColor="?attr/nc_text_secondary_color"
+        android:textSize="@dimen/nc_file_preview_size" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/nc_ac_ll_progress_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginEnd="40dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/nc_ac_pb_download_progress"-->
+<!--                style="@style/nc_pb_file_download_progress"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="8dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginEnd="3dp"-->
+<!--                android:layout_weight="1" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/nc_btn_cancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="36dp"-->
+<!--                android:src="@drawable/nc_btn_download_cancel" />-->
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/nc_ac_tv_download_progress"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:textColor="#343434"-->
+<!--            android:textSize="16sp" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/nc_ac_btn_download_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_file_preview_download_button_height"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/nc_file_preview_download_button_left_margin"
+        android:layout_marginEnd="@dimen/nc_file_preview_download_button_left_margin"
+        android:background="@drawable/nc_ac_btn_file_download_open_button"
+        android:textColor="#ffffff"
+        android:stateListAnimator="@null"
+        android:textSize="@dimen/nc_file_preview_download_button_text_size"
+        android:text="@string/nc_ac_file_preview_begin_download" />
+</LinearLayout>

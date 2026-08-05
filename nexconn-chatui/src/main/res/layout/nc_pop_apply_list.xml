@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nc_selector_item_radius"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_all_friend_request"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_received_apply"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_my_received_request"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_send_apply"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_my_sent_request"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

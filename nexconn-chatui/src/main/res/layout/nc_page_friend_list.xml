@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_right_text_drawable="?attr/nc_friend_list_add_new_img"
+        app:head_title_text="@string/nc_friends" />
+
+    <ai.nexconn.chatui.widget.component.SearchComponent
+        android:id="@+id/nc_search_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:search_component_clickable="true" />
+
+    <ai.nexconn.chatui.usermanage.component.ContactListComponent
+        android:id="@+id/nc_contact_list_component"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:show_divider="false"
+        app:show_item_select_icon="false"
+        app:show_side_bar="true" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nc_notice_item_height"
+    android:background="?attr/nc_common_background_color"
+    android:backgroundTint="?attr/nc_common_background_color"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/nc_network_Indicator_view_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nc_conversationlist_notice_icon_iv"
+        android:layout_width="@dimen/nc_notice_item_icon_size"
+        android:layout_height="@dimen/nc_notice_item_icon_size"
+        android:layout_marginStart="@dimen/nc_notice_item_padding"
+        android:src="?attr/nc_network_unreachable_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nc_conversationlist_notice_tv"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_notice_icon_text_spacing"
+        android:layout_marginEnd="@dimen/nc_notice_icon_text_spacing"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="@dimen/nc_font_text_third_size"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nc_conversationlist_notice_icon_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

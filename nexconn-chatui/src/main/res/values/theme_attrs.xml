@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom theme attributes -->
+    
+    <!-- Primary colors -->
+    <attr name="nc_primary_color" format="color" />
+    
+    <!-- Text colors -->
+    <attr name="nc_text_primary_color" format="color" />
+    <attr name="nc_text_secondary_color" format="color" />
+    <attr name="nc_reference_edited_text_color" format="color" />
+    
+    <!-- Functional colors -->
+    <attr name="nc_success_color" format="color" />
+    <attr name="nc_hint_color" format="color" />
+    <attr name="nc_disabled_color" format="color" />
+
+    <!-- Background and divider colors -->
+    <attr name="nc_common_background_color" format="color" />
+    <attr name="nc_auxiliary_background_1_color" format="color" />
+    <attr name="nc_auxiliary_background_2_color" format="color" />
+    <attr name="nc_line_background_color" format="color" />
+    <attr name="nc_selected_background_color" format="color" />
+    <attr name="nc_conversation_list_background_color" format="color" />
+    <attr name="nc_view_background_color" format="color" />
+    <attr name="nc_mask_color" format="color" />
+    <attr name="nc_link_color" format="color" />
+
+    <attr name="nc_auxiliary_view_color" format="color" />
+    <attr name="nc_conversation_stick_color" format="color" />
+
+    <attr name="nc_network_Indicator_view_bg_color" format="color" />
+    <attr name="nc_clear_color" format="color" />
+    <attr name="nc_pop_layer_background_color" format="color" />
+    <attr name="nc_control_title_white_color" format="color" />
+
+    <attr name="nc_corner_style" format="reference" />
+    <attr name="nc_bottom_dialog_background_color" format="color" />
+    <attr name="nc_unread_msg_bg_style_color" format="color" />
+
+    <attr name="nc_user_manager_background_color" format="color" />
+
+    <!-- Icon drawables -->
+    <attr name="nc_conversation_list_cell_block_notification_img" format="reference" />
+    <attr name="nc_conversation_list_cell_pin_img" format="reference" />
+    <attr name="nc_conversation_list_cell_msg_read_img" format="reference" />
+    <attr name="nc_conversation_list_cell_msg_sending_img" format="reference" />
+    <attr name="nc_navigation_bar_btn_back_img" format="reference" />
+    <attr name="nc_navigation_bar_btn_more_img" format="reference" />
+    <attr name="nc_conversation_block_notification_img" format="reference" />
+    <attr name="nc_user_online_status_img" format="reference" />
+    <attr name="nc_user_offline_status_img" format="reference" />
+
+    <!-- Message context menu icon attributes -->
+    <attr name="nc_conversation_menu_item_copy_img" format="reference" />
+    <attr name="nc_conversation_menu_item_delete_img" format="reference" />
+    <attr name="nc_conversation_menu_item_recall_img" format="reference" />
+    <attr name="nc_conversation_menu_item_reference_img" format="reference" />
+    <attr name="nc_conversation_menu_item_edit_img" format="reference" />
+    <attr name="nc_conversation_menu_item_multiple_img" format="reference" />
+    <attr name="nc_conversation_menu_item_translation_img" format="reference" />
+    <attr name="nc_conversation_menu_item_sound_transform_img" format="reference" />
+    <attr name="nc_conversation_menu_item_forward_img" format="reference" />
+    <attr name="nc_conversation_menu_item_combine_forward_img" format="reference" />
+    <attr name="nc_conversation_menu_item_combine_delete_img" format="reference" />
+    
+    <!-- Extension icon drawables -->
+    <attr name="nc_conversation_plugin_item_image_img" format="reference" />
+    <attr name="nc_conversation_plugin_item_sight_img" format="reference" />
+    <attr name="nc_conversation_plugin_item_file_img" format="reference" />
+    <attr name="nc_conversation_plugin_item_location_img" format="reference" />
+    <attr name="nc_conversation_plugin_item_voice_input_img" format="reference" />
+    <attr name="nc_conversation_plugin_item_contact_img" format="reference" />
+    
+    <!-- Default avatar drawable -->
+    <attr name="nc_conversation_list_cell_portrait_msg_img" format="reference" />
+    <attr name="nc_conversation_list_cell_group_portrait_img" format="reference" />
+    <attr name="nc_conversation_list_cell_discussion_portrait_img" format="reference" />
+
+    <attr name="nc_conversation_input_bar_voice_img" format="reference" />
+    <attr name="nc_conversation_input_bar_keyboard_img" format="reference" />
+    <attr name="nc_conversation_input_bar_emoji_img" format="reference" />
+    <attr name="nc_conversation_input_bar_add_img" format="reference" />
+    <attr name="nc_icon_add_simple" format="reference" />
+    <attr name="nc_conversation_setting_img" format="reference" />
+
+    <attr name="nc_conversation_msg_cell_send_voice_1_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_send_voice_2_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_send_voice_3_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_receive_voice_1_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_receive_voice_2_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_receive_voice_3_img" format="reference" />
+    <attr name="nc_icon_voice_send_animator" format="reference" />
+    <attr name="nc_icon_voice_receive_animator" format="reference" />
+
+    <attr name="nc_conversation_mic_volume_0_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_1_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_2_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_3_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_4_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_5_img" format="reference" />
+    <attr name="nc_conversation_mic_volume_6_img" format="reference" />
+
+    <attr name="nc_conversation_msg_cell_select_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_unselect_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_selector" format="reference" />
+
+    <attr name="nc_conversation_msg_edit_cancel_img" format="reference" />
+    <attr name="nc_conversation_msg_edit_collapse_img" format="reference" />
+    <attr name="nc_conversation_msg_edit_expand_img" format="reference" />
+    <attr name="nc_conversation_msg_edit_confirm_enable_img" format="reference" />
+    <attr name="nc_conversation_msg_edit_confirm_unable_img" format="reference" />
+
+    <attr name="nc_conversation_list_no_message_img" format="reference" />
+    <attr name="nc_combine_msg_preview_failed_img" format="reference" />
+    <attr name="nc_media_file_state_check_img" format="reference" />
+    <attr name="nc_media_file_state_checkbox" format="reference" />
+
+    <attr name="nc_conversation_msg_send_background" format="reference" />
+    <attr name="nc_conversation_msg_receiver_background" format="reference" />
+    <attr name="nc_conversation_msg_special_background" format="reference" />
+    <attr name="nc_conversation_msg_cell_receipt_img" format="reference" />
+    <attr name="nc_selected_background_color_selected" format="reference" />
+
+    <attr name="nc_conversation_msg_v5_read_list_empty_img" format="reference" />
+    <attr name="nc_conversation_list_cell_msg_unread_img" format="reference" />
+
+    <attr name="nc_conversation_unread_button_arrow_img" format="reference" />
+    <attr name="nc_conversation_mention_button_arrow_img" format="reference" />
+
+    <attr name="nc_conversation_list_cell_msg_fail_msg" format="reference" />
+    <attr name="nc_network_unreachable_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_gif_loadfailed_img" format="reference" />
+    <attr name="nc_conversation_msg_cell_gif_needload_img" format="reference" />
+
+
+    <attr name="nc_group_member_select_img" format="reference" />
+    <attr name="nc_group_member_unselect_img" format="reference" />
+    <attr name="nc_group_member_disable_select_img" format="reference" />
+    <attr name="nc_group_member_checkbox_selector" format="reference" />
+
+    <attr name="nc_group_manage_add_member_img" format="reference" />
+    <attr name="nc_group_follow_remove_btn_img" format="reference" />
+    <attr name="nc_search_icon_img" format="reference" />
+    <attr name="nc_search_close_icon_img" format="reference" />
+
+    <!-- Empty-state icon for adding friends -->
+    <attr name="nc_friend_search_not_exist_img" format="reference" />
+    <attr name="nc_group_manage_gender_cell_check_img" format="reference" />
+    <attr name="nc_user_profile_start_chat_img" format="reference" />
+    <attr name="nc_user_profile_start_audio_img" format="reference" />
+    <attr name="nc_user_profile_start_video_img" format="reference" />
+    <attr name="nc_right_arrow_icon_img" format="reference" />
+    <attr name="nc_friend_list_add_new_img" format="reference" />
+    <attr name="nc_group_member_add_img" format="reference" />
+    <attr name="nc_group_member_remove_img" format="reference" />
+
+</resources>

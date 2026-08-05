@@ -1,0 +1,84 @@
+package ai.nexconn.chatui.channel.messagelist.status;
+
+import ai.nexconn.chatui.channel.ChannelViewModel;
+import ai.nexconn.chatui.model.UiMessage;
+import android.os.Bundle;
+
+public class StateContext {
+    IMessageState historyState = new HistoryState(this);
+    IMessageState normalState = new NormalState(this);
+    IMessageState chatroomNormalSate = new ChatroomNormalState(this);
+    public static final int NORMAL_STATE = 0;
+    public static final int HISTORY_STATE = 1;
+    public static final int CHATROOM_NORMAL_STATE = 2;
+    private IMessageState currentState;
+
+    public StateContext(int state) {
+        switch (state) {
+            case NORMAL_STATE:
+                this.currentState = normalState;
+                break;
+            case HISTORY_STATE:
+                this.currentState = historyState;
+                break;
+            case CHATROOM_NORMAL_STATE:
+                this.currentState = chatroomNormalSate;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void setCurrentState(IMessageState state) {
+        this.currentState = state;
+    }
+
+    public void init(ChannelViewModel messageViewModel, Bundle bundle) {
+        currentState.init(messageViewModel, bundle);
+    }
+
+    public void onLoadMore(ChannelViewModel viewModel) {
+        currentState.onLoadMore(viewModel);
+    }
+
+    public void onRefresh(ChannelViewModel viewModel) {
+        currentState.onRefresh(viewModel);
+    }
+
+    public void onNewMessageBarClick(ChannelViewModel viewModel) {
+        currentState.onNewMessageBarClick(viewModel);
+    }
+
+    public void onHistoryBarClick(ChannelViewModel viewModel) {
+        currentState.onHistoryBarClick(viewModel);
+    }
+
+    public void newMentionMessageBarClick(ChannelViewModel viewModel) {
+        currentState.onNewMentionMessageBarClick(viewModel);
+    }
+
+    public void onScrollToBottom(ChannelViewModel viewModel) {
+        currentState.onScrollToBottom(viewModel);
+    }
+
+    public void onClearMessage(ChannelViewModel viewModel) {
+        currentState = normalState;
+    }
+
+    public boolean isNormalState(ChannelViewModel viewModel) {
+        return normalState.equals(currentState);
+    }
+
+    public boolean isHistoryState(ChannelViewModel viewModel) {
+        return historyState.equals(currentState);
+    }
+
+    public void onReceived(
+            ChannelViewModel messageViewModel,
+            UiMessage message,
+            int left,
+            boolean hasPackage,
+            boolean offline) {
+        currentState.onReceived(messageViewModel, message, left, hasPackage, offline);
+    }
+}

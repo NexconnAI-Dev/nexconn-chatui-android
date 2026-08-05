@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nc_cl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/nc_margin_size_10"
+    android:paddingBottom="@dimen/nc_margin_size_10"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <TextView
+        android:id="@+id/nc_time"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:textColor="?attr/nc_text_secondary_color"
+        android:textSize="@dimen/nc_font_describe_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nc_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_margin_size_8"
+        android:layout_marginTop="10dp"
+        android:src="?attr/nc_conversation_msg_cell_selector"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_content" />
+
+    <ImageView
+        android:id="@+id/nc_left_portrait"
+        android:layout_width="@dimen/nc_message_portrait_size"
+        android:layout_height="@dimen/nc_message_portrait_size"
+        android:layout_marginStart="@dimen/nc_margin_size_4"
+        android:src="?attr/nc_text_secondary_color"
+        app:layout_constraintStart_toEndOf="@id/nc_selected"
+        app:layout_constraintTop_toTopOf="@id/ll_content"
+        app:layout_goneMarginStart="@dimen/nc_margin_size_12" />
+
+    <ImageView
+        android:id="@+id/nc_right_portrait"
+        android:layout_width="@dimen/nc_message_portrait_size"
+        android:layout_height="@dimen/nc_message_portrait_size"
+        android:layout_marginEnd="@dimen/nc_margin_size_12"
+        android:src="?attr/nc_text_secondary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_content"
+        app:layout_goneMarginTop="@dimen/nc_margin_size_20" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_margin_size_8"
+        android:layout_marginEnd="@dimen/nc_margin_size_8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/nc_right_portrait"
+        app:layout_constraintStart_toEndOf="@id/nc_left_portrait"
+        app:layout_constraintTop_toBottomOf="@id/nc_time">
+
+        <TextView
+            android:id="@+id/nc_title"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="@dimen/nc_font_text_third_size" />
+
+        <LinearLayout
+            android:id="@+id/nc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/nc_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="11dp"
+                android:indeterminateDrawable="@drawable/nc_progress_sending_style"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/nc_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                android:src="?attr/nc_conversation_list_cell_msg_fail_msg"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/nc_read_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="4dp"
+                android:src="?attr/nc_conversation_list_cell_msg_read_img"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nc_read_receipt_request"
+                style="@style/TextStyle.Alignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="4dp"
+                android:textColor="?attr/nc_primary_color"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:drawableStartCompat="?attr/nc_conversation_msg_cell_receipt_img" />
+
+            <TextView
+                android:id="@+id/nc_read_receipt_status"
+                style="@style/TextStyle.Alignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="4dp"
+                android:text="@string/nc_read_receipt_status"
+                android:textColor="?attr/nc_primary_color"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/nc_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/nc_edit_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/nc_edit_status_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/nc_edit_status_failed"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/nc_edit_status_progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/nc_progress_edit_style"
+                android:paddingTop="2dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- TODO: Confirm NC_functional_error usage. -->
+            <TextView
+                android:id="@+id/nc_edit_status_content"
+                style="@style/TextStyle.Alignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:textColor="?attr/nc_hint_color"
+                android:text="@string/nc_edit_status_failed"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/nc_v_edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

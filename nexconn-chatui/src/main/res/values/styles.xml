@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PictureThemeWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/nc_picture_anim_album_show</item>
+        <item name="android:windowExitAnimation">@anim/nc_picture_anim_album_dismiss</item>
+    </style>
+
+    <style name="PictureThemeDialogWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/nc_picture_anim_modal_in</item>
+        <item name="android:windowExitAnimation">@anim/nc_picture_anim_modal_out</item>
+    </style>
+
+    <style name="Picture.Theme.Dialog.AudioStyle">
+        <item name="android:windowEnterAnimation">@anim/nc_picture_anim_enter</item>
+        <item name="android:windowExitAnimation">@anim/nc_picture_anim_exit</item>
+    </style>
+
+    <style name="Picture.Theme.AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/picture_color_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+
+    <style name="Picture.Theme.Dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- Window frame -->
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- Float above the activity. -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- Translucent window. -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- No window title. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+
+        <!-- Transparent window background. -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Picture selector theme. Keep every item to preserve its appearance. -->
+    <style name="picture.WeChat.style" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Toolbar background color -->
+        <item name="colorPrimary">@color/nc_background_main_color</item>
+        <!-- Status bar background color -->
+        <item name="colorPrimaryDark">@color/nc_background_main_color</item>
+        <!-- Whether the picture list uses dark status bar icons. -->
+        <item name="picture.statusFontColor">false</item>
+        <!-- Back icon -->
+        <item name="picture.leftBack.icon">@drawable/nc_picture_icon_close</item>
+        <!-- Title down arrow -->
+        <item name="picture.arrow_down.icon">@drawable/nc_picture_icon_wechat_down</item>
+        <!-- Title up arrow -->
+        <item name="picture.arrow_up.icon">@drawable/nc_picture_icon_wechat_up</item>
+        <!-- Title text color -->
+        <item name="picture.title.textColor">@color/app_color_white</item>
+        <!-- Toolbar action text color -->
+        <item name="picture.right.textColor">@color/app_color_white</item>
+        <!-- Picture selection indicator -->
+        <item name="picture.checked.style">@drawable/nc_picture_check_selector</item>
+        <!-- Enable numbered selection indicators. -->
+        <item name="picture.style.checkNumMode">true</item>
+        <!-- Show the selected count as 0/9. -->
+        <item name="picture.style.numComplete">false</item>
+        <!-- Picture list bottom bar background -->
+        <item name="picture.bottom.bg">@color/app_color_grey</item>
+        <!-- Picture list preview text color -->
+        <item name="picture.preview.textColor">@color/app_color_white</item>
+        <!-- Picture list completion text color -->
+        <item name="picture.complete.textColor">@color/app_color_white</item>
+        <!-- Selected count badge background -->
+        <item name="picture.num.style">@drawable/num_oval_blue</item>
+        <!-- Preview title text color -->
+        <item name="picture.ac_preview.title.textColor">@color/app_color_white</item>
+        <!-- Preview completion text color -->
+        <item name="picture.ac_preview.complete.textColor">@color/app_color_white</item>
+        <!-- Preview toolbar background -->
+        <item name="picture.ac_preview.title.bg">@color/app_color_grey</item>
+        <!-- Preview bottom bar background -->
+        <item name="picture.ac_preview.bottom.bg">@color/picture_color_70</item>
+        <!-- Preview back icon -->
+        <item name="picture.preview.leftBack.icon">@drawable/nc_picture_icon_back</item>
+        <!-- Crop toolbar background -->
+        <item name="picture.crop.toolbar.bg">@color/app_color_grey</item>
+        <!-- Crop status bar color -->
+        <item name="picture.crop.status.color">@color/app_color_grey</item>
+        <!-- Crop title text color -->
+        <item name="picture.crop.title.color">@color/app_color_white</item>
+        <!-- Selected album folder icon -->
+        <item name="picture.folder_checked_dot">@drawable/nc_picture_orange_oval</item>
+    </style>
+
+
+    <style name="Picture.Theme.Translucent" parent="Base.Theme.NoActionBar">
+        <item name="android:windowBackground">@color/picture_color_transparent
+        </item> <!-- Background transparency -->
+        <item name="android:windowNoTitle">true</item><!-- No window title -->
+        <item name="android:windowIsTranslucent">true</item><!-- Set to false to disable translucency. -->
+    </style>
+
+    <style name="Base.Theme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="nc_profile_user_detail_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="FullScreenDialogTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#99000000</item>
+    </style>
+
+    <!-- Merged from the former misspelled sytles.xml file. -->
+    <style name="nc_sight_horizontal_light_thin_divider">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">?attr/nc_line_background_color</item>
+    </style>
+
+</resources>

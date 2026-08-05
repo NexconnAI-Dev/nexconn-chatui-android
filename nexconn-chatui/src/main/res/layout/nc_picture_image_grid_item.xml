@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ai.nexconn.chatui.picture.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvCheck"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="?attr/nc_media_file_state_checkbox"
+        android:gravity="center"
+        android:textColor="@color/nc_white_color"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/btnCheck"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/picture_color_transparent" />
+
+    <TextView
+        android:id="@+id/tv_isGif"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nc_picture_gif_tag"
+        android:text="@string/nc_picture_gif_tag"
+        android:textColor="@color/picture_color_white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_long_chart"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nc_picture_gif_tag"
+        android:text="@string/nc_picture_long_chart"
+        android:textColor="@color/picture_color_white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/nc_picture_icon_shadow_bg"
+        android:drawableStart="@drawable/nc_picture_icon_video"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:paddingTop="8dp"
+        android:text="00:00"
+        android:textColor="@color/picture_color_white"
+        android:textSize="11sp"
+        android:visibility="gone" />
+</ai.nexconn.chatui.picture.widget.SquareRelativeLayout>

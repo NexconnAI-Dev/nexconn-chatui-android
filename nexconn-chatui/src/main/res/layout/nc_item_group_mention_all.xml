@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/nc_margin_size_16"
+    android:paddingEnd="@dimen/nc_margin_size_16"
+    android:layout_marginBottom="20dp"
+    android:background="?attr/nc_common_background_color">
+
+    <TextView
+        android:id="@+id/nc_iv_mention_all"
+        android:textDirection="locale"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="All"
+        android:textColor="@color/nc_white_color"
+        android:textStyle="bold"
+        android:background="@drawable/nc_bg_mention_all" />
+
+    <TextView
+        android:id="@+id/nc_tv_mention_all"
+        android:textDirection="locale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_margin_size_12"
+        android:text="@string/nc_group_mention_all_members"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

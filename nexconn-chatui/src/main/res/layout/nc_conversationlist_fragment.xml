@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_view_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nc_conversationlist_notice_container"
+        layout="@layout/nc_conversationlist_notice_view"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout
+        android:id="@+id/nc_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nc_conversation_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/nc_conversationlist_item" />
+    </ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout>
+</LinearLayout>

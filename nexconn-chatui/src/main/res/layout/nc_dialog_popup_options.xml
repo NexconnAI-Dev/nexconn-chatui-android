@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="?attr/nc_common_background_color"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/nc_list_dialog_popup_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nc_popup_dialog_corner_style"
+        android:divider="?attr/nc_line_background_color"
+        android:listSelector="?attr/nc_selected_background_color"
+        android:dividerHeight="0.5dp">
+    </ListView>
+</RelativeLayout>

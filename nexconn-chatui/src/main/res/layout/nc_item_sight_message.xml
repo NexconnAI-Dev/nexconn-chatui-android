@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="horizontal"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <RelativeLayout
+        android:id="@+id/nc_sight_operation"
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/nc_sight_operation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nc_file_icon_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ai.nexconn.chatui.widget.NCMessageFrameLayout
+        android:id="@+id/nc_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/nc_sight_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--android:scaleType="centerCrop"
+        app:NCMinShortSideSize="140dp"-->
+
+        <ImageView
+            android:id="@+id/nc_sight_tag"
+            android:layout_width="@dimen/nc_sight_play_size"
+            android:layout_height="@dimen/nc_sight_play_size"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nc_icon_video_play" />
+
+        <ProgressBar
+            android:id="@+id/compressVideoBar"
+            android:layout_width="@dimen/nc_sight_progress_size"
+            android:layout_height="@dimen/nc_sight_progress_size"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ai.nexconn.chatui.widget.CircleProgressView
+            android:id="@+id/nc_sight_progress"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nc_sight_duration"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/nc_sight_duration_bg"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="2dp"
+            android:includeFontPadding="false"
+            android:paddingStart="6dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/nc_white_color"
+            android:textSize="12sp" />
+    </ai.nexconn.chatui.widget.NCMessageFrameLayout>
+</LinearLayout>

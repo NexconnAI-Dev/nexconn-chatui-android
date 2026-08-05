@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_common_background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ai.nexconn.chatui.widget.TitleBar
+        android:id="@+id/nc_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/nc_common_background_color"
+        app:right_icon="?attr/nc_navigation_bar_btn_more_img"
+        app:titleMargin="0dp" />
+
+    <ViewFlipper
+        android:id="@+id/nc_base_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+</LinearLayout>

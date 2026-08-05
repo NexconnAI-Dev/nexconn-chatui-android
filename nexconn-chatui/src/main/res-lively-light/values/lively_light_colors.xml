@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="nc_primary_color_light">#0047FF</color>
+    
+    <!-- Text colors -->
+    <color name="nc_text_primary_color_light">#020814</color>
+    <color name="nc_text_secondary_color_light">#7C838E</color>
+    <color name="nc_reference_edited_text_color_light">#A0A5AB</color>
+    
+    <!-- Functional colors -->
+    <color name="nc_success_color_light">#16D258</color>
+    <color name="nc_hint_color_light">#F74D43</color>
+    <color name="nc_disabled_color_light">#D9D9D9</color>
+
+    <!-- Background and divider colors -->
+    <color name="nc_common_background_color_light">#FFFFFF</color>
+    <color name="nc_auxiliary_background_1_color_light">#F3F6F9</color>
+    <color name="nc_auxiliary_background_2_color_light">#D2E1FE</color>
+    <color name="nc_view_background_color_light">#E1F0FF</color>
+    <color name="nc_line_background_color_light">#1A000000</color> <!-- 1A000000(10%) -->
+    <color name="nc_selected_background_color_light">#1A000000</color> <!-- 000000(10%) -->
+    <color name="nc_conversation_list_background_color_light">#4DFFFFFF</color> <!-- FFFFFF(30%) -->
+    <color name="nc_mask_color_light">#80000000</color> <!-- 141414(50%) -->
+    <color name="nc_link_color_light">#020814</color>
+    <color name="nc_auxiliary_view_color_light">#E5E5E5</color>
+    <color name="nc_conversation_stick_color_light">#CCFFFFFF</color>
+
+    <color name="nc_pop_layer_background_color_light">#2D2D32</color>
+    <color name="nc_network_Indicator_view_bg_color_light">#4DF74D43</color>
+
+    <color name="nc_control_title_white_color_light">#FFFFFF</color>
+    <color name="nc_clear_color_light">#00FFFFFF</color>
+
+    <color name="nc_auxiliary_red_light">#FF5F59</color>
+</resources>

@@ -1,0 +1,26 @@
+name: Android
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+      - uses: android-actions/setup-android@v3
+      - if: github.event_name == 'pull_request'
+        run: python3 scripts/check_public_source.py --source . --allow-root-git --contribution
+      - if: github.event_name != 'pull_request'
+        run: python3 scripts/check_public_source.py --source . --allow-root-git
+      - run: ./gradlew :nexconn-chatui:assembleRelease --no-daemon

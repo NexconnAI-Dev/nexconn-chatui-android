@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/nc_layout"
+    android:layout_width="231dp"
+    android:layout_height="wrap_content"
+    android:background="?attr/nc_common_background_color"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <TextView
+        android:id="@+id/nc_title"
+        style="@style/NCTheme.Message.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="?attr/nc_text_primary_color"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:gravity="center_vertical|start"
+        android:lines="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nc_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nc_content"
+            style="@style/NCTheme.Message.RichContent.TextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nc_title"
+            android:layout_marginStart="12dp"
+            android:textColor="?attr/nc_text_primary_color"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="3"
+            android:autoLink="web"
+            android:paddingBottom="9dp" />
+
+        <ImageView
+            android:id="@+id/nc_img"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/nc_content"
+            android:background="@android:color/transparent"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

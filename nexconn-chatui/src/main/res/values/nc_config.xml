@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Number of messages fetched on the first chatroom load. 0 uses 10, -1 disables fetching. -->
+    <integer name="nc_chatroom_first_pull_message_count">10</integer>
+
+    <!-- Whether to show connection status warnings in conversation screens. -->
+    <bool name="nc_is_show_warning_notification">true</bool>
+
+    <!-- Whether to play unheard voice messages continuously. -->
+    <bool name="nc_play_audio_continuous">true</bool>
+
+    <!-- Default path used when saving images from a conversation. -->
+    <string name="nc_image_default_saved_path">/Nexconn/Image/</string>
+
+    <!-- Default path used when saving videos from a conversation. -->
+    <string name="nc_video_default_saved_path">/Nexconn/Video/</string>
+
+    <!-- Default path used when saving files from a conversation. -->
+    <string name="nc_file_default_saved_path">/Nexconn/File/</string>
+
+    <!-- Whether message recall is enabled. -->
+    <bool name="nc_enable_message_recall">true</bool>
+    <!-- Message recall interval in seconds. -->
+    <integer name="nc_message_recall_interval">120</integer>
+    <!-- Re-edit interval after recalling a message, in seconds. -->
+    <integer name="nc_message_recall_edit_interval">300</integer>
+
+    <!-- Whether mentions are enabled. -->
+    <bool name="nc_enable_mentioned_message">true</bool>
+
+    <!-- Whether read receipts are enabled for private and group conversations. -->
+    <bool name="nc_read_receipt">true</bool>
+
+    <!-- Read receipt request interval in seconds. -->
+    <integer name="nc_read_receipt_request_interval">120</integer>
+
+    <!-- Sync read status across devices for private and group conversations. -->
+    <bool name="nc_enable_sync_read_status">true</bool>
+
+    <!-- Whether WebView ignores SSL certificate errors. -->
+    <!--    <bool name="nc_open_https_certificate">false</bool>-->
+
+    <bool name="nc_location_2D">false</bool>
+
+    <!-- Whether PictureSelectorActivity includes video files. -->
+    <bool name="nc_media_selector_contain_video">false</bool>
+
+    <!-- Whether opening a conversation screen clears notification tray entries. -->
+    <bool name="nc_wipe_out_notification_message">true</bool>
+
+
+    <!-- Whether JavaScript is enabled in WebView. -->
+    <bool name="nc_set_java_script_enabled">true</bool>
+
+    <!-- Whether to automatically download high-quality voice messages while online. -->
+    <bool name="nc_enable_automatic_download_voice_msg">true</bool>
+
+    <!-- Maximum GIF size for automatic download, in KB. -->
+    <integer name="nc_gifmsg_auto_download_size">1024</integer>
+
+    <!-- Maximum number of messages that can be selected. -->
+    <integer name="nc_max_message_selected_count">100</integer>
+
+    <!-- Whether new messages play a sound while a non-conversation screen is foregrounded. -->
+    <bool name="nc_sound_in_foreground">true</bool>
+
+    <!-- Whether new messages vibrate while a non-conversation screen is foregrounded. -->
+    <bool name="nc_vibrate_in_foreground">true</bool>
+
+    <!-- Whether to show the unread mention indicator in a conversation. -->
+    <bool name="nc_enable_unread_mention">true</bool>
+
+    <!-- Number of local history messages loaded when opening a conversation. -->
+    <integer name="nc_conversation_history_message_count">10</integer>
+    <!-- Number of remote history messages loaded when opening a conversation. -->
+    <integer name="nc_conversation_remote_message_count">10</integer>
+    <!-- Number of unread messages shown when opening a conversation. -->
+    <integer name="nc_conversation_show_unread_message_count">10</integer>
+
+    <!-- Whether live location requests background location permission on Android 10 and later. -->
+    <bool name="nc_enable_background_location_permission">false</bool>
+
+    <!-- Default source language for translation. -->
+    <string name="nc_translation_src_language">zh_CN</string>
+    <!-- Default target language for translation. -->
+    <string name="nc_translation_target_language">en</string>
+
+    <string name="nc_authorities_fileprovider">.FileProvider</string>
+
+
+    <!-- Maximum sight recording duration in seconds. -->
+    <integer name="nc_sight_max_record_duration">10</integer>
+
+</resources>

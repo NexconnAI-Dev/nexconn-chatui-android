@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <ai.nexconn.chatui.widget.TitleBar
+        android:id="@+id/nc_conversation_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="?attr/nc_common_background_color"
+        app:right_icon="?attr/nc_navigation_bar_btn_more_img"
+        app:titleMargin="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout
+        android:id="@+id/nc_refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nc_extension"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nc_conversation_title_bar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nc_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </ai.nexconn.chatui.widget.pullrefresh.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/nc_new_message_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/nc_lively_conversation_newmsg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/nc_refresh"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nc_unread_message_count"
+        android:layout_width="wrap_content"
+        android:minWidth="110dp"
+        android:layout_height="@dimen/nc_unread_height"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/nc_margin_size_30"
+        android:background="@drawable/nc_unread_msg_bg_style"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:maxLines="1"
+        android:textColor="?attr/nc_primary_color"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:drawableStartCompat="?attr/nc_conversation_unread_button_arrow_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nc_mention_message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/nc_unread_height"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/nc_margin_size_80"
+        android:minWidth="110dp"
+        android:background="@drawable/nc_unread_msg_bg_style"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:text="@string/nc_mention_messages"
+        android:maxLines="1"
+        android:textColor="?attr/nc_hint_color"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:drawableStartCompat="?attr/nc_conversation_mention_button_arrow_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ai.nexconn.chatui.channel.extension.NCExtension
+        android:id="@+id/nc_extension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nc_refresh" />
+
+    <LinearLayout
+        android:id="@+id/nc_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/nc_auxiliary_view_color"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

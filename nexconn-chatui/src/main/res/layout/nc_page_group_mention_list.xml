@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="vertical">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_title_text="@string/nc_group_mention_title" />
+
+    <ai.nexconn.chatui.widget.component.SearchComponent
+        android:id="@+id/nc_search_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nc_empty_tv"
+            android:textDirection="locale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/nc_margin_size_127"
+            android:text="@string/nc_user_not_found"
+            android:textColor="?attr/nc_text_primary_color"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ai.nexconn.chatui.usermanage.component.ContactListComponent
+            android:id="@+id/nc_group_list_component"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:show_divider="false"
+            app:show_item_remove_button="false"
+            app:show_item_right_arrow="false"
+            app:show_item_right_text="false"
+            app:show_item_select_icon="false"
+            app:show_side_bar="false" />
+
+    </FrameLayout>
+
+</LinearLayout>

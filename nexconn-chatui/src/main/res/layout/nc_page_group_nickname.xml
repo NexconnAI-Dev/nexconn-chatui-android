@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/NCLivelyLightTheme"
+    android:orientation="vertical">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_right_text="@string/nc_confirm"
+        app:head_title_text="@string/nc_group_nickname" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:layout_marginTop="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <TextView
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nc_nickname_label"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/group_Nickname_input"
+            style="@style/EditTextStyle.Alignment"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/nc_unread_msg_bg_style_color"
+            android:gravity="center_vertical"
+            android:hint="@string/nc_nickname_hint"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textColorHint="?attr/nc_text_secondary_color"
+            android:maxLength="64"
+            android:paddingStart="@dimen/nc_margin_size_12"
+            android:paddingEnd="@dimen/nc_margin_size_12"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/description"
+        android:textDirection="locale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nc_margin_size_16"
+        android:layout_marginEnd="@dimen/nc_margin_size_16"
+        android:layout_marginTop="@dimen/nc_margin_size_10"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/nc_nickname_description"
+        android:textColor="?attr/nc_text_secondary_color"
+        android:textSize="12sp" />
+
+</LinearLayout>

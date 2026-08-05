@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/nc_selected_background_color_selected"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:theme="@style/NCLivelyLightTheme">
+
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tv_sign"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@id/first_image"
+        android:layout_margin="4dp"
+        android:textColor="?attr/nc_text_primary_color"
+        android:background="?attr/picture.folder_checked_dot"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_folder_name"
+        style="@style/TextStyle.Alignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/first_image"
+        android:text="@string/nc_picture_camera_roll_num"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Lively Dark theme exposed to applications. -->
+    <style name="NCLivelyDarkTheme">
+        <!-- Custom theme attributes aligned with the color resource names. -->
+        <!-- Primary colors -->
+        <item name="nc_primary_color">@color/nc_primary_color_dark</item>
+        
+        <!-- Text colors -->
+        <item name="nc_text_primary_color">@color/nc_text_primary_color_dark</item>
+        <item name="nc_text_secondary_color">@color/nc_text_secondary_color_dark</item>
+        <item name="nc_reference_edited_text_color">@color/nc_reference_edited_text_color_dark</item>
+
+        <!-- Functional colors -->
+        <item name="nc_success_color">@color/nc_success_color_dark</item>
+        <item name="nc_hint_color">@color/nc_hint_color_dark</item>
+        <item name="nc_disabled_color">@color/nc_disabled_color_dark</item>
+
+        <!-- Background and divider colors -->
+        <item name="nc_common_background_color">@color/nc_common_background_color_dark</item>
+        <item name="nc_auxiliary_background_1_color">@color/nc_auxiliary_background_1_color_dark</item>
+        <item name="nc_auxiliary_background_2_color">@color/nc_auxiliary_background_2_color_dark</item>
+        <item name="nc_view_background_color">@color/nc_view_background_color_dark</item>
+        <item name="nc_line_background_color">@color/nc_line_background_color_dark</item>
+        <item name="nc_selected_background_color">@color/nc_selected_background_color_dark</item>
+        <item name="nc_conversation_list_background_color">@color/nc_conversation_list_background_color_dark</item>
+        <item name="nc_mask_color">@color/nc_mask_color_dark</item>
+        <item name="nc_link_color">@color/nc_link_color_dark</item>
+
+        <item name="nc_auxiliary_view_color">@color/nc_auxiliary_view_color_dark</item>
+        <item name="nc_conversation_stick_color">@color/nc_conversation_stick_color_dark</item>
+
+        <item name="nc_network_Indicator_view_bg_color">@color/nc_network_Indicator_view_bg_color_dark</item>
+        <item name="nc_clear_color">@color/nc_clear_color_dark</item>
+
+        <item name="nc_pop_layer_background_color">@color/nc_pop_layer_background_color_dark</item>
+        <item name="nc_control_title_white_color">@color/nc_control_title_white_color_dark</item>
+
+        <item name="nc_corner_style">@drawable/nc_lively_corner_style</item>
+        <item name="nc_bottom_dialog_background_color">@color/nc_common_background_color_dark</item>
+        <item name="nc_unread_msg_bg_style_color">@color/nc_common_background_color_dark</item>
+
+        <item name="nc_user_manager_background_color">@color/nc_auxiliary_background_1_color_dark</item>
+
+        <!-- Icon drawables -->
+        <item name="nc_conversation_list_cell_block_notification_img">@drawable/nc_lively_no_disturb</item>
+        <item name="nc_conversation_list_cell_pin_img">@drawable/nc_lively_pin_top</item>
+        <item name="nc_conversation_list_cell_msg_read_img">@drawable/nc_lively_read_receipt</item>
+        <item name="nc_conversation_list_cell_msg_unread_img">@drawable/nc_lively_unread_receipt_dark</item>
+        <item name="nc_conversation_list_cell_msg_sending_img">@drawable/nc_lively_sending_dark</item>
+        <item name="nc_conversation_block_notification_img">@drawable/nc_lively_conversation_no_disturb</item>
+        <item name="nc_user_online_status_img">@drawable/nc_lively_conner_online</item>
+        <item name="nc_user_offline_status_img">@drawable/nc_lively_conner_offline</item>
+
+        <item name="nc_navigation_bar_btn_back_img">@drawable/nc_lively_back_dark</item>
+        <item name="nc_navigation_bar_btn_more_img">@drawable/nc_lively_more_dark</item>
+
+        <!-- Message context menu icons -->
+        <item name="nc_conversation_menu_item_copy_img">@drawable/nc_lively_copy</item>
+        <item name="nc_conversation_menu_item_delete_img">@drawable/nc_lively_delete_dark</item>
+        <item name="nc_conversation_menu_item_recall_img">@drawable/nc_lively_recall</item>
+        <item name="nc_conversation_menu_item_reference_img">@drawable/nc_lively_reference</item>
+        <item name="nc_conversation_menu_item_edit_img">@drawable/nc_lively_edit</item>
+        <item name="nc_conversation_menu_item_multiple_img">@drawable/nc_lively_multi_select</item>
+        <item name="nc_conversation_menu_item_translation_img">@drawable/nc_lively_translate</item>
+        <item name="nc_conversation_menu_item_sound_transform_img">@drawable/nc_lively_speech_to_text</item>
+        <item name="nc_conversation_menu_item_forward_img">@drawable/nc_lively_forward_dark</item>
+        <item name="nc_conversation_menu_item_combine_forward_img">@drawable/nc_lively_combine_forward_dark</item>
+        <item name="nc_conversation_menu_item_combine_delete_img">@drawable/nc_lively_delete_dark</item>
+
+        <!-- Extension icon drawables -->
+        <item name="nc_conversation_plugin_item_image_img">@drawable/nc_lively_plugin_image_selector_dark</item>
+        <item name="nc_conversation_plugin_item_sight_img">@drawable/nc_lively_plugin_sight_selector_dark</item>
+        <item name="nc_conversation_plugin_item_file_img">@drawable/nc_lively_plugin_file_selector_dark</item>
+        <item name="nc_conversation_plugin_item_location_img">@drawable/nc_lively_plugin_location_selector_dark</item>
+        <item name="nc_conversation_plugin_item_voice_input_img">@drawable/nc_lively_plugin_voice_input_selector_dark</item>
+        <item name="nc_conversation_plugin_item_contact_img">@drawable/nc_lively_plugin_contact_selector_dark</item>
+
+        <!-- Default avatar drawable for V1. -->
+        <item name="nc_conversation_list_cell_portrait_msg_img">@drawable/nc_lively_default_portrait</item>
+        <item name="nc_conversation_list_cell_group_portrait_img">@drawable/nc_lively_default_group_portrait</item>
+        <item name="nc_conversation_list_cell_discussion_portrait_img">@drawable/nc_lively_default_chatroom_portrait</item>
+
+        <item name="nc_conversation_input_bar_voice_img">@drawable/nc_lively_voice_dark</item>
+        <item name="nc_conversation_input_bar_keyboard_img">@drawable/nc_lively_keyboard_dark</item>
+        <item name="nc_conversation_input_bar_emoji_img">@drawable/nc_lively_emoji_dark</item>
+        <item name="nc_conversation_input_bar_add_img">@drawable/nc_lively_add_circle_dark</item>
+        <item name="nc_icon_add_simple">@drawable/nc_lively_add_simple_dark</item>
+        <item name="nc_conversation_setting_img">@drawable/nc_lively_settings_dark</item>
+
+        <item name="nc_conversation_msg_cell_send_voice_1_img">@drawable/nc_lively_voice_send1_dark</item>
+        <item name="nc_conversation_msg_cell_send_voice_2_img">@drawable/nc_lively_voice_send2_dark</item>
+        <item name="nc_conversation_msg_cell_send_voice_3_img">@drawable/nc_lively_voice_send3_dark</item>
+        <item name="nc_conversation_msg_cell_receive_voice_1_img">@drawable/nc_lively_voice_receive1_dark</item>
+        <item name="nc_conversation_msg_cell_receive_voice_2_img">@drawable/nc_lively_voice_receive2_dark</item>
+        <item name="nc_conversation_msg_cell_receive_voice_3_img">@drawable/nc_lively_voice_receive3_dark</item>
+        <item name="nc_icon_voice_send_animator">@drawable/nc_lively_voice_send_animator_dark</item>
+        <item name="nc_icon_voice_receive_animator">@drawable/nc_lively_voice_receive_animator_dark</item>
+
+        <item name="nc_conversation_mic_volume_0_img">@drawable/nc_lively_voice_0</item>
+        <item name="nc_conversation_mic_volume_1_img">@drawable/nc_lively_voice_1</item>
+        <item name="nc_conversation_mic_volume_2_img">@drawable/nc_lively_voice_2</item>
+        <item name="nc_conversation_mic_volume_3_img">@drawable/nc_lively_voice_3</item>
+        <item name="nc_conversation_mic_volume_4_img">@drawable/nc_lively_voice_4</item>
+        <item name="nc_conversation_mic_volume_5_img">@drawable/nc_lively_voice_5</item>
+        <item name="nc_conversation_mic_volume_6_img">@drawable/nc_lively_voice_6</item>
+
+        <item name="nc_conversation_msg_cell_select_img">@drawable/nc_lively_selected_dark</item>
+        <item name="nc_conversation_msg_cell_unselect_img">@drawable/nc_lively_unselected_dark</item>
+        <item name="nc_conversation_msg_cell_selector">@drawable/nc_lively_checkbox_selector_dark</item>
+
+        <item name="nc_conversation_msg_edit_cancel_img">@drawable/nc_lively_edit_cancel_dark</item>
+        <item name="nc_conversation_msg_edit_collapse_img">@drawable/nc_lively_edit_collapse_dark</item>
+        <item name="nc_conversation_msg_edit_expand_img">@drawable/nc_lively_edit_expand_dark</item>
+        <item name="nc_conversation_msg_edit_confirm_enable_img">@drawable/nc_edit_message_confirm_enable</item>
+        <item name="nc_conversation_msg_edit_confirm_unable_img">@drawable/nc_lively_confirm_unable</item>
+
+        <item name="nc_conversation_list_no_message_img">@drawable/nc_lively_empty_hint_dark</item>
+        <item name="nc_combine_msg_preview_failed_img">@drawable/nc_lively_combine_failed_dark</item>
+        <item name="nc_media_file_state_check_img">@drawable/nc_lively_checkbox_original</item>
+        <item name="nc_media_file_state_checkbox">@drawable/nc_lively_checkbox_selector_background</item>
+
+        <item name="nc_conversation_msg_send_background">@drawable/nc_lively_background_message_send_dark</item>
+        <item name="nc_conversation_msg_receiver_background">@drawable/nc_lively_background_message_receiver_dark</item>
+        <item name="nc_conversation_msg_special_background">@drawable/nc_lively_background_message_special_dark</item>
+        <item name="nc_conversation_msg_cell_receipt_img">@drawable/nc_lively_read_receipt_request_dark</item>
+        <item name="nc_selected_background_color_selected">@drawable/nc_lively_selected_background_color_selected_dark</item>
+
+        <item name="nc_conversation_msg_v5_read_list_empty_img">@drawable/nc_lively_read_receipt_none_dark</item>
+
+        <item name="nc_conversation_unread_button_arrow_img">@drawable/nc_lively_double_arrow_blue</item>
+        <item name="nc_conversation_mention_button_arrow_img">@drawable/nc_lively_double_arrow_red</item>
+
+        <item name="nc_network_unreachable_img">@drawable/nc_lively_error_notice_dark</item>
+        <item name="nc_conversation_list_cell_msg_fail_msg">@drawable/nc_lively_warning_dark</item>
+        <item name="nc_conversation_msg_cell_gif_loadfailed_img">@drawable/nc_lively_image_download_failed</item>
+        <item name="nc_conversation_msg_cell_gif_needload_img">@drawable/nc_lively_image_download</item>
+
+        <item name="nc_group_member_select_img">@drawable/nc_lively_selected_dark</item>
+        <item name="nc_group_member_unselect_img">@drawable/nc_lively_unselected_dark</item>
+        <item name="nc_group_member_disable_select_img">@drawable/nc_lively_checkbox_disable_dark</item>
+        <item name="nc_group_member_checkbox_selector">@drawable/nc_lively_checkbox_selector_dark</item>
+
+        <item name="nc_group_manage_add_member_img">@drawable/nc_user_manager_add_icon_dark</item>
+        <item name="nc_group_follow_remove_btn_img">@drawable/nc_lively_group_follow_remove_btn</item>
+        <item name="nc_search_icon_img">@drawable/nc_lively_search_dark</item>
+        <item name="nc_search_close_icon_img">@drawable/nc_lively_search_close_dark</item>
+
+        <item name="nc_friend_search_not_exist_img">@drawable/nc_add_friend_empty_dark</item>
+        <item name="nc_group_manage_gender_cell_check_img">@drawable/nc_lively_select_dark</item>
+
+        <item name="nc_user_profile_start_chat_img">@drawable/nc_lively_start_chat_dark</item>
+        <item name="nc_user_profile_start_audio_img">@drawable/nc_lively_start_audio_dark</item>
+        <item name="nc_user_profile_start_video_img">@drawable/nc_lively_start_video_dark</item>
+        <item name="nc_right_arrow_icon_img">@drawable/nc_lively_right_arrow_dark</item>
+
+        <item name="nc_friend_list_add_new_img">@drawable/nc_lively_add_friend_dark</item>
+        <item name="nc_group_member_add_img">@drawable/nc_lively_add_group_member_dark</item>
+        <item name="nc_group_member_remove_img">@drawable/nc_lively_remove_group_member_dark</item>
+    </style>
+
+
+</resources>

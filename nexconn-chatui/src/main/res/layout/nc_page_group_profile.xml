@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_title_text="@string/nc_group_info" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/nc_margin_size_16"
+            android:paddingEnd="@dimen/nc_margin_size_16">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_margin_size_6" />
+
+            <LinearLayout
+                android:id="@+id/ll_group_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/nc_bottom_dialog_background_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/nc_margin_size_16"
+                android:paddingTop="@dimen/nc_margin_size_16"
+                android:paddingEnd="@dimen/nc_margin_size_16"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:id="@+id/tv_group_members_label"
+                    android:textDirection="locale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nc_group_members_label"
+                    android:textColor="?attr/nc_text_primary_color"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_group_members_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="?attr/nc_right_arrow_icon_img" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_group_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/nc_bottom_dialog_background_color"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:paddingBottom="@dimen/nc_margin_size_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_margin_size_12" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_group_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                android:clickable="false"
+                app:item_content="@string/nc_group_avatar"
+                app:item_divider="true"
+                app:item_selected_image="?attr/nc_conversation_list_cell_group_portrait_img"
+                app:item_show_selected="true"
+                app:item_value_text_size="15sp" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_group_title"
+                app:item_divider="true"
+                app:item_right_image="?attr/nc_right_arrow_icon_img"
+                app:item_right_image_auto_mirrored="true"
+                app:item_value_text_size="15sp" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_group_announcement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_group_announcement"
+                app:item_divider="true"
+                app:item_right_image="?attr/nc_right_arrow_icon_img"
+                app:item_right_image_auto_mirrored="true"
+                app:item_value_text_size="15sp" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_my_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_my_nickname_in_group"
+                app:item_divider="false"
+                app:item_right_image="?attr/nc_right_arrow_icon_img"
+                app:item_right_image_auto_mirrored="true"
+                app:item_value_text_size="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_margin_size_12" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_group_manage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_group_management"
+                app:item_divider="false"
+                app:item_right_image="?attr/nc_right_arrow_icon_img"
+                app:item_right_image_auto_mirrored="true"
+                app:item_value_text_size="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_margin_size_12" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_message_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_notification_mute"
+                app:item_divider="true"
+                app:item_switch="true"
+                app:item_value_text_size="15sp" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_group_follows"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_group_follows"
+                app:item_divider="true"
+                app:item_right_image="?attr/nc_right_arrow_icon_img"
+                app:item_right_image_auto_mirrored="true"
+                app:item_value_text_size="15sp" />
+
+            <ai.nexconn.chatui.widget.SettingItemView
+                android:id="@+id/siv_conversation_set_top"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nc_title_bar_height"
+                app:item_content="@string/nc_chat_pin"
+                app:item_divider="false"
+                app:item_switch="true"
+                app:item_value_text_size="15sp" />
+
+
+            <Button
+                android:id="@+id/btn_dissolve_group"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="29dp"
+                android:background="@drawable/nc_lively_hint_color_radius_6"
+                android:text="@string/nc_dissolve_group"
+                android:textColor="@color/nc_white_color"
+                android:stateListAnimator="@null"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

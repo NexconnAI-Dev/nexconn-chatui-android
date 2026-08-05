@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_title_text="@string/nc_user_info" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_head"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="@dimen/nc_margin_size_16"
+        android:background="?attr/nc_bottom_dialog_background_color"
+        android:layout_marginStart="@dimen/nc_margin_size_16"
+        android:layout_marginEnd="@dimen/nc_margin_size_16"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nc_head"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="4dp"
+            android:src="?attr/nc_conversation_list_cell_portrait_msg_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="?attr/nc_right_arrow_icon_img"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="?attr/nc_line_background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_head" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="?attr/nc_bottom_dialog_background_color"
+        android:layout_marginStart="@dimen/nc_margin_size_16"
+        android:layout_marginEnd="@dimen/nc_margin_size_16"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nc_nickname_label"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nickname_content"
+            android:textDirection="locale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:ellipsize="end"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:maxLines="1"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_icon2"
+            app:layout_constraintStart_toEndOf="@id/tv_nickname"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Alex" />
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="?attr/nc_right_arrow_icon_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="?attr/nc_line_background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_nickname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_app"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="?attr/nc_bottom_dialog_background_color"
+        android:layout_marginStart="@dimen/nc_margin_size_16"
+        android:layout_marginEnd="@dimen/nc_margin_size_16"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nc_app"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_app_content"
+            android:textDirection="locale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_app"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="9281982" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="?attr/nc_line_background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_app" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_gender"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="?attr/nc_bottom_dialog_background_color"
+        android:layout_marginStart="@dimen/nc_margin_size_16"
+        android:layout_marginEnd="@dimen/nc_margin_size_16"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingEnd="@dimen/nc_margin_size_16">
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nc_gender"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_gender_content"
+            android:textDirection="locale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_icon5"
+            app:layout_constraintStart_toEndOf="@id/tv_gender"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="acelo@qq.com" />
+
+        <ImageView
+            android:id="@+id/iv_icon5"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="?attr/nc_right_arrow_icon_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/nc_bottom_dialog_background_color"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/nc_margin_size_16"
+    android:layout_marginEnd="@dimen/nc_margin_size_16"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/nc_auxiliary_background_1_color"
+        android:gravity="center_vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="10dp"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="17sp"
+        android:visibility="gone"
+        tools:text="Just now" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/nc_bottom_dialog_background_color"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/app_color_black" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textDirection="locale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toStartOf="@id/ll_btn"
+            app:layout_constraintStart_toEndOf="@id/iv_head"
+            app:layout_constraintTop_toTopOf="@id/ll_btn"
+            app:layout_constraintBottom_toBottomOf="@id/ll_btn"
+            tools:text="Nickname" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:textDirection="locale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="45dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Please add me" />
+
+        <TextView
+            android:id="@+id/tv_expand"
+            android:textDirection="locale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/nc_expand"
+            android:textColor="?attr/nc_primary_color"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="@id/tv_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_content"
+            app:layout_constraintEnd_toEndOf="@id/ll_btn" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:textDirection="locale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nc_passed"
+                android:textColor="?attr/nc_text_secondary_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_reject"
+                android:textDirection="locale"
+                android:layout_width="62dp"
+                android:layout_height="30dp"
+                android:background="@drawable/nc_apply_reject_bg"
+                android:gravity="center"
+                android:text="@string/nc_reject"
+                android:textColor="?attr/nc_hint_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_accept"
+                android:textDirection="locale"
+                android:layout_width="62dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/nc_apply_accept_bg"
+                android:gravity="center"
+                android:text="@string/nc_accept"
+                android:textColor="@color/nc_white_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/nc_line_background_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

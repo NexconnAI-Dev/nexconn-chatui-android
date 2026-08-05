@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/nc_image_count_down" />
+    <size
+        android:width="@dimen/nc_margin_size_20"
+        android:height="@dimen/nc_margin_size_20" />
+
+    <corners android:radius="20dp" />
+
+</shape>

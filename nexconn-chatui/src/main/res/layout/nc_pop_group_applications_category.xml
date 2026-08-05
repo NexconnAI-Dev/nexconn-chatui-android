@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="136dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nc_selector_item_radius"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/menu_item_all_requests"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_all_requests"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/menu_item_pending_confirmation"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_pending_confirmation"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/menu_item_processed_requests"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_completed"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/menu_item_expired_requests"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/nc_selector_item_hover"
+        android:gravity="center"
+        android:text="@string/nc_expired"
+        android:textColor="?attr/nc_text_primary_color"
+        android:textSize="14sp" />
+</LinearLayout>

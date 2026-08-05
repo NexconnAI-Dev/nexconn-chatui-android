@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nc_title_bar_height"
+    android:paddingStart="@dimen/nc_margin_size_16"
+    android:paddingEnd="@dimen/nc_margin_size_16">
+
+    <FrameLayout
+        android:id="@+id/fl_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/nc_search_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_search_icon"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="?attr/nc_search_icon_img" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:hint="@string/nc_search"
+                android:textColor="?attr/nc_text_primary_color"
+                android:textColorHint="?attr/nc_text_secondary_color"
+                android:imeOptions="actionSearch"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:src="?attr/nc_search_close_icon_img"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</FrameLayout>

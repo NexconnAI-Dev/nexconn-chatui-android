@@ -1,0 +1,14 @@
+plugins {
+    id 'com.android.library' version '8.8.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.22' apply false
+    id 'org.jetbrains.dokka' version '1.9.10' apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.nexconn.ai/repository/maven-releases/' }
+    }
+}

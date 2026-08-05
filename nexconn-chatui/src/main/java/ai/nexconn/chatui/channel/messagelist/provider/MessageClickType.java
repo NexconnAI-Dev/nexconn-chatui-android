@@ -1,0 +1,20 @@
+package ai.nexconn.chatui.channel.messagelist.provider;
+
+/**
+ * Message click event type constants. SDK-defined click types start from -1 to distinguish from
+ * user-defined ones.
+ */
+public class MessageClickType {
+    public static final int WARNING_CLICK = -1;
+
+    public static final int READ_RECEIPT_STATE_CLICK = -3;
+    public static final int CONTENT_LONG_CLICK = -4;
+    public static final int USER_PORTRAIT_CLICK = -5;
+    public static final int USER_PORTRAIT_LONG_CLICK = -6;
+    public static final int AUDIO_CLICK = -7;
+    public static final int REEDIT_CLICK = -8;
+    public static final int CONTENT_CLICK = -9;
+    public static final int EDIT_CLICK = -10;
+    public static final int STREAM_MSG_PULL = -11;
+    public static final int SPEECH_TO_TEXT = -12;
+}

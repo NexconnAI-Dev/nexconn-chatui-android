@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NCExtension">
+        <attr name="NCStyle">
+            <enum name="SCE" value="0x123" />
+            <enum name="SC" value="0x120" />
+            <enum name="CE" value="0x023" />
+            <enum name="C" value="0x020" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="srlStyle" format="reference" /><!-- Style -->
+    <attr name="srlDrawableSize" format="dimension" /><!-- Drawable size -->
+    <attr name="srlDrawableArrowSize" format="dimension" /><!-- Arrow drawable size -->
+    <attr name="srlDrawableProgressSize" format="dimension" /><!-- Progress drawable size -->
+    <attr name="srlDrawableMarginRight" format="dimension" /><!-- Spacing between drawable and text -->
+    <attr name="srlTextSizeTitle" format="dimension" /><!-- Title text size -->
+    <attr name="srlTextSizeTime" format="dimension" /><!-- Time text size -->
+    <attr name="srlFinishDuration" format="integer" /><!-- Completion display duration -->
+    <attr name="srlPrimaryColor" format="color" /><!-- Primary color -->
+    <attr name="srlAccentColor" format="color" /><!-- Accent color -->
+    <attr name="srlDrawableArrow" format="reference" /><!-- Arrow drawable -->
+    <attr name="srlDrawableProgress" format="reference" /><!-- Progress drawable -->
+    <attr name="srlEnableHorizontalDrag" format="boolean" /><!-- Enable horizontal dragging -->
+
+    <attr name="srlTextPulling" format="string" />
+    <attr name="srlTextLoading" format="string" />
+    <attr name="srlTextRelease" format="string" />
+    <attr name="srlTextFinish" format="string" />
+    <attr name="srlTextFailed" format="string" />
+    <attr name="srlTextUpdate" format="string" />
+    <attr name="srlTextSecondary" format="string" />
+    <attr name="srlTextRefreshing" format="string" />
+    <attr name="srlTextNothing" format="string" />
+
+    <attr name="srlClassicsSpinnerStyle" format="enum">
+        <enum name="Translate" value="0" /><!-- Translate -->
+        <enum name="Scale" value="1" /><!-- Scale -->
+        <enum name="FixedBehind" value="2" /><!-- Fixed behind content -->
+    </attr>
+
+    <attr name="layout_srlSpinnerStyle" format="enum">
+        <enum name="Translate" value="0" /><!-- Translate -->
+        <enum name="Scale" value="1" /><!-- Scale -->
+        <enum name="FixedBehind" value="2" /><!-- Fixed behind content -->
+        <enum name="FixedFront" value="3" /><!-- Fixed in front of content -->
+        <enum name="MatchLayout" value="4" /><!-- Match the layout bounds -->
+    </attr>
+
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="android:clipChildren" />
+        <attr name="android:clipToPadding" />
+        <attr name="srlPrimaryColor" />
+        <attr name="srlAccentColor" />
+        <attr name="srlReboundDuration" format="integer" />
+        <attr name="srlHeaderHeight" format="dimension" />
+        <attr name="srlFooterHeight" format="dimension" />
+        <attr name="srlHeaderInsetStart" format="dimension" />
+        <attr name="srlFooterInsetStart" format="dimension" />
+        <attr name="srlDragRate" format="float" />
+        <attr name="srlHeaderMaxDragRate" format="float" />
+        <attr name="srlFooterMaxDragRate" format="float" />
+        <attr name="srlHeaderTriggerRate" format="float" />
+        <attr name="srlFooterTriggerRate" format="float" />
+        <attr name="srlEnableRefresh" format="boolean" />
+        <attr name="srlEnableLoadMore" format="boolean" />
+        <attr name="srlEnableHeaderTranslationContent" format="boolean" />
+        <attr name="srlEnableFooterTranslationContent" format="boolean" />
+        <attr name="srlHeaderTranslationViewId" format="reference" />
+        <attr name="srlFooterTranslationViewId" format="reference" />
+        <attr name="srlEnablePreviewInEditMode" format="boolean" />
+        <attr name="srlEnableAutoLoadMore" format="boolean" />
+        <attr name="srlEnableOverScrollBounce" format="boolean" />
+        <attr name="srlEnablePureScrollMode" format="boolean" />
+        <attr name="srlEnableNestedScrolling" format="boolean" />
+        <attr name="srlEnableScrollContentWhenLoaded" format="boolean" />
+        <attr name="srlEnableScrollContentWhenRefreshed" format="boolean" />
+        <attr name="srlEnableLoadMoreWhenContentNotFull" format="boolean" />
+        <attr name="srlEnableFooterFollowWhenLoadFinished" format="boolean" />
+        <attr name="srlEnableFooterFollowWhenNoMoreData" format="boolean" />
+        <attr name="srlEnableClipHeaderWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableClipFooterWhenFixedBehind" format="boolean" />
+        <attr name="srlEnableOverScrollDrag" format="boolean" />
+        <attr name="srlDisableContentWhenRefresh" format="boolean" />
+        <attr name="srlDisableContentWhenLoading" format="boolean" />
+        <attr name="srlFixedHeaderViewId" format="reference" />
+        <attr name="srlFixedFooterViewId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout_Layout">
+        <attr name="layout_srlSpinnerStyle" />
+        <attr name="layout_srlBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <style name="SmartRefreshStyle">
+        <item name="srlPrimaryColor">@android:color/holo_blue_dark</item>
+        <item name="srlAccentColor">@android:color/white</item>
+        <item name="srlReboundDuration">300</item>
+        <item name="srlHeaderHeight">100dp</item>
+        <item name="srlFooterHeight">60dp</item>
+        <item name="srlHeaderInsetStart">0dp</item>
+        <item name="srlFooterInsetStart">0dp</item>
+        <item name="srlDragRate">0.5</item>
+        <item name="srlHeaderMaxDragRate">2.5</item>
+        <item name="srlFooterMaxDragRate">2.5</item>
+        <item name="srlHeaderTriggerRate">1</item>
+        <item name="srlFooterTriggerRate">1</item>
+        <!--<item name="srlEnableRefresh">true</item>-->
+        <!--<item name="srlEnableLoadMore">true</item>-->
+        <!--<item name="srlEnableHeaderTranslationContent">true</item>-->
+        <!--<item name="srlEnableFooterTranslationContent">true</item>-->
+        <!--<item name="srlHeaderTranslationViewId">-1</item>-->
+        <!--<item name="srlFooterTranslationViewId">-1</item>-->
+        <item name="srlEnablePreviewInEditMode">true</item>
+        <item name="srlEnableAutoLoadMore">true</item>
+        <item name="srlEnableOverScrollDrag">false</item>
+        <item name="srlEnableOverScrollBounce">true</item>
+        <item name="srlEnablePureScrollMode">false</item>
+        <item name="srlEnableNestedScrolling">true</item>
+        <item name="srlEnableScrollContentWhenLoaded">true</item>
+        <item name="srlEnableScrollContentWhenRefreshed">true</item>
+        <item name="srlEnableLoadMoreWhenContentNotFull">true</item>
+        <!--<item name="srlEnableFooterFollowWhenLoadFinished" format="boolean"/>-->
+        <item name="srlEnableFooterFollowWhenNoMoreData">false</item>
+        <item name="srlEnableClipHeaderWhenFixedBehind">true</item>
+        <item name="srlEnableClipFooterWhenFixedBehind">true</item>
+        <item name="srlDisableContentWhenRefresh">false</item>
+        <item name="srlDisableContentWhenLoading">false</item>
+        <!--<item name="srlFixedHeaderViewId" format="reference"/>-->
+        <!--<item name="srlFixedFooterViewId" format="reference"/>-->
+    </style>
+
+
+    <style name="nc_pb_file_download_progress">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/nc_pb_file_download_progress</item>
+    </style>
+
+    <declare-styleable name="AutoLinkTextView">
+        <attr name="NCMaxWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EllipsizeTextView">
+        <attr name="NCEllipsizeText" format="string|reference" />
+        <attr name="NCEllipsizeIndex" format="integer|reference" />
+    </declare-styleable>
+
+    <style name="NCTheme.TextView" parent="android:Widget.TextView" />
+
+    <style name="NCTheme.Message.TextView" parent="NCTheme.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/nc_rich_title</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="NCTheme.Message.RichContent.TextView" parent="NCTheme.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/nc_rich_content</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <declare-styleable name="TitleBar">
+        <attr name="title" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="right_text_color" format="color" />
+        <attr name="left_text_color" format="color" />
+        <attr name="left_text" format="string" />
+        <attr name="show_back_icon" format="boolean" />
+        <attr name="right_icon" format="reference" />
+        <attr name="show_middle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgress">
+        <attr name="circleProgress" format="integer" /> <!-- Progress from 0 to 100 -->
+        <attr name="startAngle" format="integer" /> <!-- Start angle from 0 to 360 -->
+        <attr name="circleCorner" format="dimension" /> <!-- Corner radius -->
+        <attr name="backgroundColor" format="color" /> <!-- Background color -->
+    </declare-styleable>
+
+    <style name="dialogFullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="EditTextStyle.Alignment" parent="@android:style/Widget.EditText">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <style name="TextStyle.Alignment" parent="@android:style/Widget.TextView">
+        <item name="android:textDirection">locale</item>
+    </style>
+
+    <!-- Setting item -->
+    <declare-styleable name="SettingItemView">
+        <attr name="item_image" format="reference" />
+        <attr name="item_image_height" format="dimension" />
+        <attr name="item_image_width" format="dimension" />
+        <attr name="item_content" format="string" />
+        <attr name="item_content_text_size" format="dimension" />
+        <attr name="item_content_text_color" format="color" />
+        <attr name="item_value" format="string" />
+        <attr name="item_value_text_size" format="dimension" />
+        <attr name="item_value_text_color" format="color" />
+        <attr name="item_divider" format="boolean" />
+        <attr name="item_tag_image_height" format="dimension" />
+        <attr name="item_tag_image_width" format="dimension" />
+        <attr name="item_tag_image" format="reference" />
+        <attr name="item_switch" format="boolean" />
+        <attr name="item_background" format="reference" />
+        <attr name="item_null_background" format="boolean" />
+        <attr name="item_show_selected" format="boolean" />
+        <attr name="item_selected_image" format="reference" />
+        <attr name="item_right_image" format="reference" />
+        <attr name="item_right_image_auto_mirrored" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+
+    <!-- Picture selector attributes -->
+    <attr name="picture.title.textColor" format="reference|color" />
+    <attr name="picture.right.textColor" format="reference|color" />
+    <attr name="picture.leftBack.icon" format="reference" />
+    <attr name="picture.arrow_down.icon" format="reference" />
+    <attr name="picture.arrow_up.icon" format="reference" />
+    <attr name="picture.num.style" format="reference" />
+    <attr name="picture.checked.style" format="reference" />
+    <attr name="picture.bottom.bg" format="reference|color" />
+    <attr name="picture.preview.textColor" format="reference|color" />
+    <attr name="picture.complete.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.title.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.complete.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.bottom.bg" format="reference|color" />
+    <attr name="picture.status.color" format="reference|color" />
+    <attr name="picture.ac_preview.title.bg" format="reference|color" />
+    <attr name="picture.preview.leftBack.icon" format="reference" />
+    <attr name="picture.statusFontColor" format="boolean" />
+    <attr name="picture.style.numComplete" format="boolean" />
+    <attr name="picture.style.checkNumMode" format="boolean" />
+    <attr name="picture.crop.toolbar.bg" format="reference|color" />
+    <attr name="picture.crop.status.color" format="reference|color" />
+    <attr name="picture.crop.title.color" format="reference|color" />
+    <attr name="picture.folder_checked_dot" format="reference" />
+    <!-- End picture selector attributes -->
+
+    <declare-styleable name="ContactListComponent">
+        <attr name="show_side_bar" format="boolean" />
+        <attr name="show_divider" format="boolean" />
+        <attr name="show_item_select_icon" format="boolean" />
+        <attr name="show_item_right_arrow" format="boolean" />
+        <attr name="show_item_right_text" format="boolean" />
+        <attr name="show_item_select_auto_update" format="boolean" />
+        <attr name="show_item_remove_button" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonListComponent">
+        <attr name="enable_refresh" format="boolean" />
+        <attr name="enable_load_more" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeadComponent">
+        <attr name="head_left_text" format="string" />
+        <attr name="head_title_text" format="string" />
+        <attr name="head_right_text" format="string" />
+        <attr name="head_left_text_drawable" format="reference" />
+        <attr name="head_title_text_drawable" format="reference" />
+        <attr name="head_right_text_drawable" format="reference" />
+        <attr name="head_right_text_color_default" format="color" />
+        <attr name="head_right_text_color_disable" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchComponent">
+        <attr name="search_component_clickable" format="boolean" />
+    </declare-styleable>
+
+</resources>

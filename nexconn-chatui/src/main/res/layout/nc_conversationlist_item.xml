@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nc_conversation_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nc_conversation_item_height"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false">
+
+        <RelativeLayout
+            android:id="@+id/nc_conversation_portrait_rl"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/nc_margin_size_12"
+            android:layout_marginTop="@dimen/nc_margin_size_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/nc_conversation_portrait"
+                android:layout_width="@dimen/nc_conversation_portrait_size"
+                android:layout_height="@dimen/nc_conversation_portrait_size"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/nc_conversation_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/nc_conversation_unread_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/nc_unread_count_bg_normal" />
+
+                <TextView
+                    android:id="@+id/nc_conversation_unread_count"
+                    style="@style/TextStyle.Alignment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="15"
+                    android:textColor="@color/nc_white_color"
+                    android:textSize="@dimen/nc_font_auxiliary_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/nc_conversation_online_status"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginStart="@dimen/nc_margin_size_12"
+            android:layout_marginTop="@dimen/nc_margin_size_16"
+            android:visibility="gone"
+            android:src="?attr/nc_user_online_status_img"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/nc_conversation_title"
+            app:layout_constraintEnd_toStartOf="@+id/nc_conversation_title"
+            app:layout_constraintStart_toEndOf="@+id/nc_conversation_portrait_rl" />
+
+        <TextView
+            android:id="@+id/nc_conversation_title"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            app:layout_goneMarginStart="@dimen/nc_margin_size_12"
+            android:layout_marginTop="@dimen/nc_margin_size_16"
+            android:layout_marginEnd="@dimen/nc_margin_size_12"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Alex"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="@dimen/nc_font_secondary_size"
+            app:layout_constraintEnd_toStartOf="@+id/nc_conversation_date"
+            app:layout_constraintStart_toEndOf="@+id/nc_conversation_online_status"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nc_conversation_content"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="60dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Hello, friend!"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="@dimen/nc_font_text_third_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/nc_conversation_portrait_rl"
+            app:layout_constraintTop_toBottomOf="@+id/nc_conversation_title" />
+
+        <TextView
+            android:id="@+id/nc_conversation_date"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:longClickable="false"
+            android:layout_marginTop="@dimen/nc_margin_size_16"
+            android:layout_marginEnd="@dimen/nc_margin_size_12"
+            tools:text="Mar 22"
+            android:textColor="?attr/nc_text_secondary_color"
+            android:textSize="@dimen/nc_font_nav_or_date_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/nc_conversation_pin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/nc_margin_size_12"
+            android:src="?attr/nc_conversation_list_cell_pin_img"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/nc_margin_size_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_goneMarginEnd="@dimen/nc_margin_size_12" />
+
+        <ImageView
+            android:id="@+id/nc_conversation_no_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/nc_margin_size_4"
+            android:layout_marginBottom="@dimen/nc_margin_size_12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nc_conversation_pin_top"
+            app:layout_goneMarginEnd="@dimen/nc_margin_size_12"
+            android:src="?attr/nc_conversation_list_cell_block_notification_img" />
+
+        <ImageView
+            android:id="@+id/nc_conversation_read_receipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/nc_margin_size_2"
+            android:layout_marginBottom="@dimen/nc_margin_size_12"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nc_conversation_no_disturb"
+            app:layout_goneMarginEnd="@dimen/nc_margin_size_4"
+            android:src="?attr/nc_conversation_list_cell_msg_read_img" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="71.5dp"
+            android:background="?attr/nc_line_background_color"
+            app:layout_constraintStart_toStartOf="@id/nc_conversation_title"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

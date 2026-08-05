@@ -1,0 +1,35 @@
+Nexconn ChatUI
+
+Copyright (c) 2026 Nexconn
+
+This product includes third-party components. Their license texts and copyright
+notices must remain with the corresponding source files in the public source
+repository.
+
+PhotoView
+Copyright 2011, 2012 Chris Banes
+Apache License 2.0
+
+Subsampling Scale Image View
+Copyright 2013-2015 David Morrissey
+Apache License 2.0
+
+SystemBarTint
+Copyright (C) 2013 readyState Software Ltd
+Apache License 2.0
+
+AOSP cache utility
+Copyright (C) 2011 The Android Open Source Project
+Apache License 2.0
+
+OpenIntents file utility
+Copyright (C) 2007-2008 OpenIntents.org
+Apache License 2.0
+
+PictureSelector and SmartRefreshLayout are retained from the IMKit public
+baseline and remain subject to their original Apache License 2.0 copyright and
+attribution notices.
+
+CircleProgressView and the image resources inherited from the IMKit public
+baseline follow the existing IMKit open-source handling. Nexconn-specific
+differences remain subject to the approved source inventory and this license.

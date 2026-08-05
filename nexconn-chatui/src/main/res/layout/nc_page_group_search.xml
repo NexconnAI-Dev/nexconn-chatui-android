@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nc_auxiliary_background_1_color"
+    android:orientation="vertical">
+
+    <ai.nexconn.chatui.widget.component.HeadComponent
+        android:id="@+id/nc_head_component"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nc_title_bar_height"
+        app:head_title_text="@string/nc_my_groups" />
+
+    <ai.nexconn.chatui.widget.component.SearchComponent
+        android:id="@+id/nc_search_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nc_empty_tv"
+            android:textDirection="locale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/nc_margin_size_127"
+            android:text="@string/nc_no_data"
+            android:visibility="gone"
+            android:textColor="?attr/nc_text_primary_color"
+            tools:visiblity="visible" />
+
+        <ai.nexconn.chatui.usermanage.component.CommonListComponent
+            android:id="@+id/nc_group_list_component"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/nc_margin_size_16"
+            android:paddingEnd="@dimen/nc_margin_size_16"
+            app:enable_load_more="true"
+            app:enable_refresh="false" />
+
+    </FrameLayout>
+
+</LinearLayout>

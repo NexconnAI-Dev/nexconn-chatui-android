@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ConversationList -->
+    <string name="nc_conversation_list_title">Chat lists</string>
+    <string name="nc_conversation_list_notice_network_unavailable">Network unavailable. Check your connection.</string>
+    <string name="nc_conversation_list_notice_proxy_unavailable">Proxy unavailable</string>
+    <string name="nc_conversation_list_notice_disconnect">Unable to connect to server</string>
+    <string name="nc_conversation_list_notice_kicked">This account is signed in on another device</string>
+    <string name="nc_conversation_list_notice_connecting">Connecting...</string>
+    <string name="nc_conversation_list_dialog_cancel_top">Unpin</string>
+    <string name="nc_conversation_unread_dot">99+</string>
+
+    <!-- groupnotificationmessage -->
+    <string name="nc_item_group_notification_summary">[Group notification]</string>
+
+    <string name="nc_yesterday_format">Yesterday</string>
+    <string name="nc_date_yesterday">Yesterday</string>
+    <string name="nc_date_monday">Monday</string>
+    <string name="nc_date_tuesday">Tuesday</string>
+    <string name="nc_date_wednesday">Wednesday</string>
+    <string name="nc_date_thursday">Thursday</string>
+    <string name="nc_date_friday">Friday</string>
+    <string name="nc_date_saturday">Saturday</string>
+    <string name="nc_date_sunday">Sunday</string>
+    <string name="nc_date_am">AM</string>
+    <string name="nc_date_morning">AM</string>
+    <string name="nc_date_noon">PM</string>
+    <string name="nc_date_pm">PM</string>
+    <string name="nc_date_night">PM</string>
+
+    <string name="nc_default_message">This message type isn\'t supported yet</string>
+
+    <string name="nc_conversation_summary_content_image">[Image]</string>
+    <string name="nc_conversation_summary_content_voice">[Voice]</string>
+    <string name="nc_conversation_summary_content_file">[File]</string>
+    <string name="nc_conversation_summary_content_sight">[Video]</string>
+    <string name="nc_conversation_summary_content_combine">[Chat history]</string>
+    <string name="nc_conversation_summary_content_draft">[Draft]</string>
+    <string name="nc_conversation_summary_content_mentioned">[@You]</string>
+
+    <string name="nc_ext_plugin_image">Photos</string>
+    <string name="nc_ext_plugin_file">Files</string>
+    <!-- location -->
+
+    <!--Reference Message-->
+    <string name="nc_search_file_prefix">[File]&#160;</string>
+
+    <!--Long click-->
+    <string name="nc_dialog_item_message_delete_failed_msg">Disconnected. Try again later.</string>
+    <string name="nc_dialog_item_message_copy">Copy</string>
+
+
+    <string name="nc_voice_press_to_input">Hold to talk</string>
+    <string name="nc_voice_release_to_send">Release to send</string>
+    <string name="nc_voice_rec">Slide up to cancel</string>
+    <string name="nc_voice_cancel">Release to cancel</string>
+
+    <!--emoji description 128 total start-->
+    <string name="nc_emoji_smiley_face">Sliley Face</string>><!--1-->
+    <string name="nc_emoji_grinning_face">Grinning Face</string><!--2-->
+    <string name="nc_emoji_smiley">Smiley</string><!--3-->
+    <string name="nc_emoji_cute">Cute</string><!--4-->
+    <string name="nc_emoji_winking_face">Winking Face</string><!--5-->
+    <string name="nc_emoji_heart_eyes">Heart Eyes</string><!--6-->
+    <string name="nc_emoji_blowing_kiss">Blowing Kiss</string><!--7-->
+    <string name="nc_emoji_kiss_face">Kiss Face</string><!--8-->
+    <string name="nc_emoji_crazy_face">Crazy Face</string><!--9-->
+    <string name="nc_emoji_tongue_out">Tongue Out</string><!--10-->
+    <string name="nc_emoji_flushed_face">Flushed Face</string><!--11-->
+    <string name="nc_emoji_grinning_with_smiling">Grinning With Smiling</string><!--12-->
+    <string name="nc_emoji_pensive">Pensive</string><!--13-->
+    <string name="nc_emoji_pleased">Pleased</string><!--14-->
+    <string name="nc_emoji_dissatisfied">Dissatisfied</string><!--15-->
+    <string name="nc_emoji_worried_face">Worried Face</string><!--16-->
+    <string name="nc_emoji_disappointed_face">Disappointed Face</string><!--17-->
+    <string name="nc_emoji_helpless_face">Helpless Face</string><!--18-->
+    <string name="nc_emoji_crying">Crying</string><!--19-->
+    <string name="nc_emoji_laughing_tears">Laughing Tears</string><!--20-->
+    <string name="nc_emoji_sobbing">Sobbing</string><!--21-->
+    <string name="nc_emoji_sleepy_face">Sleepy Face</string><!--22-->
+    <string name="nc_emoji_cold_sweat">Cold Sweat</string><!--23-->
+    <string name="nc_emoji_happy_sweat">Happy Sweat</string><!--24-->
+    <string name="nc_emoji_sweat">Sweat</string><!--25-->
+    <string name="nc_emoji_tired_face">Tired Face</string><!--26-->
+    <string name="nc_emoji_weary_face">Weary Face</string><!--27-->
+    <string name="nc_emoji_fearful_face">Fearful Face</string><!--28-->
+    <string name="nc_emoji_scream">Scream</string><!--29-->
+    <string name="nc_emoji_angry_face">Angry Face</string><!--30-->
+    <string name="nc_emoji_mad_face">Mad Face</string><!--31-->
+    <string name="nc_emoji_confounded_face">Confounded Face</string><!--32-->
+    <string name="nc_emoji_big_grin">Big Grin</string><!--33-->
+    <string name="nc_emoji_hungry">Hungry</string><!--34-->
+    <string name="nc_emoji_mask_face">Mask Face</string><!--35-->
+    <string name="nc_emoji_sunglasses">Sunglassed</string><!--36-->
+    <string name="nc_emoji_sleeping">Sleeping</string><!--37-->
+    <string name="nc_emoji_shocked_face">Shocked Face</string><!--38-->
+    <string name="nc_emoji_dizzy_face">Dizzy Face</string><!--39-->
+    <string name="nc_emoji_purple_devil">Purple Devil</string><!--40-->
+    <string name="nc_emoji_devil">Devil</string><!--41-->
+    <string name="nc_emoji_surprised_face">Surprised Face</string><!--42-->
+    <string name="nc_emoji_grimacing_face">Grimacing Face</string><!--43-->
+    <string name="nc_emoji_confused">Confused</string><!--44-->
+    <string name="nc_emoji_mouthless">Mouthless</string><!--45-->
+    <string name="nc_emoji_halo">Halo</string><!--46-->
+    <string name="nc_emoji_smirking_face">Smirking Face</string><!--47-->
+    <string name="nc_emoji_expressionless_face">Expressionless Face</string><!--48-->
+    <string name="nc_emoji_see_no_monkey">See-No-Monkey</string><!--49-->
+    <string name="nc_emoji_hear_no_monkey">Hear-No-Monkey</string><!--50-->
+    <string name="nc_emoji_no_speaking">No Speaking</string><!--51-->
+    <string name="nc_emoji_alien">Alien</string><!--52-->
+    <string name="nc_emoji_pile_of_poo">Pile of Poo</string><!--53-->
+    <string name="nc_emoji_broken_heart">Broken Heart</string><!--54-->
+    <string name="nc_emoji_fire">Fire</string><!--55-->
+    <string name="nc_emoji_anger">Anger</string><!--56-->
+    <string name="nc_emoji_zzz">Zzz</string><!--57-->
+    <string name="nc_emoji_prohibited">Prohibited</string><!--58-->
+    <string name="nc_emoji_star">Star</string><!--59-->
+    <string name="nc_emoji_lightning_bolt">Lighting Bolt</string><!--60-->
+    <string name="nc_emoji_crescent_moon">Crescent Moon</string><!--61-->
+    <string name="nc_emoji_sunny">Sunny</string><!--62-->
+    <string name="nc_emoji_cloudy">Cloudy</string><!--63-->
+    <string name="nc_emoji_cloud">Cloud</string><!--64-->
+    <string name="nc_emoji_snowflake">Snowflake</string><!--65-->
+    <string name="nc_emoji_umbrella">Umbrella</string><!--66-->
+    <string name="nc_emoji_snowman">Snowman</string><!--67-->
+    <string name="nc_emoji_thumbs_up">Thumbs Up</string><!--68-->
+    <string name="nc_emoji_thumbs_down">Thumbs Down</string><!--69-->
+    <string name="nc_emoji_shake_hand">Shake Hand</string><!--70-->
+    <string name="nc_emoji_ok_hand">Ok Hand</string><!--71-->
+    <string name="nc_emoji_oncoming_fist">Oncoming Fist</string><!--72-->
+    <string name="nc_emoji_raised_fist">Raised Fist</string><!--73-->
+    <string name="nc_emoji_victory_hand">Victory Hand</string><!--74-->
+    <string name="nc_emoji_raised_hand">Raised Hand</string><!--75-->
+    <string name="nc_emoji_folded_hands">Folded Hands</string><!--76-->
+    <string name="nc_emoji_pointing_up">Pointing Up</string><!--77-->
+    <string name="nc_emoji_clapping_hands">Clapping Hands</string><!--78-->
+    <string name="nc_emoji_flexed_biceps">Flexed Biceps</string><!--79-->
+    <string name="nc_emoji_family">Family</string><!--80-->
+    <string name="nc_emoji_couple">Couple</string><!--81-->
+    <string name="nc_emoji_baby_angel">Baby Angel</string><!--82-->
+    <string name="nc_emoji_horse">Horse</string><!--83-->
+    <string name="nc_emoji_dog">Dog</string><!--84-->
+    <string name="nc_emoji_pig">Pig</string><!--85-->
+    <string name="nc_emoji_ghost">Ghost</string><!--86-->
+    <string name="nc_emoji_rose">Rose</string><!--87-->
+    <string name="nc_emoji_sunflower">Sunflower</string><!--88-->
+    <string name="nc_emoji_pine_tree">Pine Tree</string><!--89-->
+    <string name="nc_emoji_christmas_tree">Christmas Tree</string><!--90-->
+    <string name="nc_emoji_wrapped_gift">Wrapped Gift</string><!--91-->
+    <string name="nc_emoji_party_popper">Party Popper</string><!--92-->
+    <string name="nc_emoji_money_bag">Money Bag</string><!--93-->
+    <string name="nc_emoji_birthday_cake">Birthday Cake</string><!--94-->
+    <string name="nc_emoji_barbecue">Barbecue</string><!--95-->
+    <string name="nc_emoji_cooked_rice">Cooked Rice</string><!--96-->
+    <string name="nc_emoji_ice_cream">Ice Cream</string><!--97-->
+    <string name="nc_emoji_chocolate_bar">Chocolate Bar</string><!--98-->
+    <string name="nc_emoji_watermelon">Watermelon</string><!--99-->
+    <string name="nc_emoji_wine_glass">Wine Glass</string><!--100-->
+    <string name="nc_emoji_cheers">Cheers</string><!--101-->
+    <string name="nc_emoji_coffee">Coffee</string><!--102-->
+    <string name="nc_emoji_basketball">Basketball</string><!--103-->
+    <string name="nc_emoji_soccer_ball">Soccer Ball</string><!--104-->
+    <string name="nc_emoji_snowboarder">Snowboarder</string><!--105-->
+    <string name="nc_emoji_microphone">Microphone</string><!--106-->
+    <string name="nc_emoji_musical_note">Musical Note</string><!--107-->
+    <string name="nc_emoji_game_die">Game Die</string><!--108-->
+    <string name="nc_emoji_mahjone_red_dragon">Mahjong Red Dragon</string><!--109-->
+    <string name="nc_emoji_crown">Crown</string><!--110-->
+    <string name="nc_emoji_lipstick">Lipstick</string><!--111-->
+    <string name="nc_emoji_kiss">Kiss</string><!--112-->
+    <string name="nc_emoji_ring">Ring</string><!--113-->
+    <string name="nc_emoji_books">Books</string><!--114-->
+    <string name="nc_emoji_graduation_cap">Graduation Cap</string><!--115-->
+    <string name="nc_emoji_pencil">Pencil</string><!--116-->
+    <string name="nc_emoji_house_with_garden">House With Garden</string><!--117-->
+    <string name="nc_emoji_shower">Shower</string><!--118-->
+    <string name="nc_emoji_light_bulb">Light Bulb</string><!--119-->
+    <string name="nc_emoji_telephone_receiver">Telephone Receiver</string><!--120-->
+    <string name="nc_emoji_loudspeaker">Loudspeaker</string><!--121-->
+    <string name="nc_emoji_clock">Clock</string><!--122-->
+    <string name="nc_emoji_alarm_clock">Alarm Clock</string><!--123-->
+    <string name="nc_emoji_hourglass">Hourglass</string><!--124-->
+    <string name="nc_emoji_bomb">Bomb</string><!--125-->
+    <string name="nc_emoji_pistol">Pistol</string><!--126-->
+    <string name="nc_emoji_capsule">Capsule</string><!--127-->
+    <string name="nc_emoji_rocket">Rocket</string><!--128-->
+    <string name="nc_emoji_globe">Globe</string><!--129-->
+    <string name="nc_emoji_love_heart">Love</string><!--130-->
+    <!--emoji description 128 total end-->
+
+
+    <!-- notification -->
+    <string name="nc_notification_channel_name">New Messages</string>
+    <string name="nc_notification_ticker_text">You have a new message</string>
+
+    <!-- @ mention -->
+
+    <!-- permissions -->
+
+    <string name="nc_ac_file_download_preview">File preview</string>
+    <string name="nc_ac_file_download_progress_tv">Downloading...</string>
+    <string name="nc_ac_file_download_open_file_btn">Open with another app</string>
+    <string name="nc_ac_file_download_open_file_direct_btn">Open File</string>
+    <string name="nc_ac_file_preview_begin_download">Download</string>
+    <string name="nc_ac_file_preview_downloaded">Downloaded</string>
+    <string name="nc_ac_file_preview_download_error">Download failed</string>
+    <string name="nc_ac_file_preview_download_cancel">Download canceled</string>
+    <string name="nc_ac_file_download_progress_pause">Canceled</string>
+    <string name="nc_ac_file_preview_download_resume">Resume download</string>
+    <string name="nc_notice_network_unavailable">Network unavailable. Check your connection.</string>
+    <string name="nc_ac_file_url_error">Invalid file URL. Unable to download.</string>
+    <string name="nc_ac_file_preview_can_not_open_file">Unable to open file</string>
+
+    <string name="nc_file_not_exist">File not found</string>
+    <string name="nc_recall_success">Message deleted</string>
+    <string name="nc_picsel_video_corrupted">Unable to share a corrupted video</string>
+
+
+    <string name="nc_save_picture">Save to Photos</string>
+    <string name="nc_save_picture_at">Saved to album</string>
+    <string name="nc_src_file_not_found">Source file not found</string>
+
+    <string name="nc_permission_request_failed">Unable to get permission</string>
+
+    <!-- Forward-->
+    <string name="nc_forward_by_step">Forward one by one</string>
+    <string name="nc_forward_combine">Forward as one</string>
+    <string name="nc_combine_chat_record">Chat history</string>
+    <string name="nc_combine_group_chat">Group chat history</string>
+    <string name="nc_combine_the_group_chat_of">%1$s chat history</string>
+    <string name="nc_combine_and"> and </string>
+    <string name="nc_forward_failed_message_not_supported">Failed messages, audio/video calls, and streaming messages can\'t be forwarded</string>
+    <string name="nc_combine_unsupported">Unable to send. Disappearing, quoted reply and streaming messages can\'t be forwarded</string>
+    <string name="nc_combine_unsupported_step">Unable to send. Disappearing, audio/video and streaming messages can\'t be forwarded</string>
+    <string name="nc_forward_no_target_selected">Select a forward target</string>
+    <string name="nc_forward_no_message_selected">Select messages to forward</string>
+
+    <string name="nc_message_content_image">[Image]</string>
+    <string name="nc_message_content_voice">[Voice]</string>
+    <string name="nc_message_content_file">[File]</string>
+    <string name="nc_message_content_sight">[Video]</string>
+
+    <string name="nc_read_receipt">read</string>
+    <string name="nc_unread_receipt">unread</string>
+    <string name="nc_message_none_user_read">0 read</string>
+    <string name="nc_message_all_user_read">all read</string>
+
+    <string name="nc_message_unknown">This message type isn\'t supported yet</string>
+    <string name="nc_message_unknown_notification">Received an unsupported message</string>
+
+    <string name="nc_cancel">Cancel</string>
+    <string name="nc_dialog_ok">OK</string>
+    <string name="nc_back">Back</string>
+    <string name="nc_prompt">Notice</string>
+    <string name="nc_not_prompt">Don\'t show again</string>
+
+
+    <string name="nc_voip_occupying">Audio is in use. Try again later.</string>
+    <string name="nc_new_message_divider_content">Above is chat history</string>
+    <string name="nc_recall_failed_for_network_unavailable">Unable to delete. Check your connection.</string>
+    <string name="nc_recall_overtime">Delete expired</string>
+    <string name="nc_voice_short">Recording too short</string>
+    <string name="nc_voice_too_long">Recording too long</string>
+    <string name="nc_load_image_failed">Unable to load image</string>
+    <string name="nc_send_large_gif_failed">GIF is too large to send</string>
+    <string name="nc_edit_status_progress">Updating...</string>
+    <string name="nc_edit_status_success">Edited</string>
+    <string name="nc_edit_status_failed">Update failed. Tap to retry.</string>
+    <string name="nc_edit_status_retry_failed">Retry failed. Try again later.</string>
+    <string name="nc_reference_status_delete">This message was deleted for you</string>
+    <string name="nc_reference_status_recall">This message was deleted for everyone</string>
+    <string name="nc_edit_failed_by_remote_msg_not_exist">Unable to edit because the cloud message no longer exists</string>
+    <string name="nc_edit_failed_by_sensitive">Update failed. Content contains sensitive information</string>
+    <string name="nc_edit_failed_by_expire">Edit expired</string>
+    <!-- SmartRefreshLayout -->
+    <string name="srl_content_empty">The content view in SmartRefreshLayout is empty. Do you forget to add it in xml layout file?</string>
+
+    <string name="nc_unread_message">{0} new messages</string>
+
+
+    <!-- webview -->
+    <string name="nc_notification_error_ssl_cert_invalid">The website certificate is invalid</string>
+
+    <string name="nc_dialog_edit_message_content">You\'re editing another message. If you continue, the previous edits will be lost.</string>
+    <string name="nc_dialog_edit_message_is_delete">Message was deleted and can\'t be saved</string>
+
+    <string name="nc_confirm">Confirm</string>
+    <string name="nc_permission_grant_needed">Turn on this permission in Settings</string>
+    <string name="nc_permission_microphone">(Microphone)</string>
+    <string name="nc_permission_name_camera">Camera</string>
+    <string name="nc_permission_name_microphone">Microphone</string>
+    <string name="nc_permission_name_storage">Storage</string>
+    <string name="nc_permission_name_photos">Photos</string>
+    <string name="nc_permission_name_videos">Videos</string>
+    <string name="nc_permission_name_partial_photos">Selected photos</string>
+    <string name="nc_permission_name_location">Location</string>
+    <string name="nc_permission_name_bluetooth">Bluetooth</string>
+    <string name="nc_permission_name_phone">Phone</string>
+    <string name="nc_permission_name_overlay">Display over other apps</string>
+
+    <!-- Start of picture selector strings -->
+    <string name="nc_picture_camera_roll">Camera roll</string>
+    <string name="nc_picture_camera_roll_num">%1$s (%2$d)</string>
+    <string name="nc_picture_cancel">Cancel</string>
+    <string name="nc_picture_take_picture">Camera</string>
+    <string name="nc_picture_min_video_num">Select at least %1$d videos</string>
+    <string name="nc_picture_message_max_num_fir">Select up to</string>
+    <string name="nc_picture_message_max_num_sec">images</string>
+    <string name="nc_picture_message_max_num">Select up to %1$d images</string>
+    <string name="nc_picture_preview">Preview</string>
+    <string name="nc_picture_please">Please wait...</string>
+    <string name="nc_picture_empty_title">No photos or videos</string>
+    <string name="nc_picture_empty">Use your camera to take photos or videos</string>
+    <string name="nc_picture_min_img_num">Select at least %1$d photos</string>
+    <string name="nc_picture_gif_tag">GIF</string>
+    <string name="nc_picture_audio">Microphone permission denied</string>
+    <string name="nc_picture_jurisdiction">Storage permission denied</string>
+    <string name="nc_picture_camera">Camera permission denied</string>
+    <string name="nc_picture_record_video">Record Video</string>
+    <string name="nc_picture_photograph">Photograph</string>
+    <string name="nc_picture_long_chart">Long</string>
+    <string name="nc_picture_prompt">Notice</string>
+    <string name="nc_picture_prompt_content">Save to Photos?</string>
+    <string name="nc_picture_error">Image is corrupted</string>
+    <string name="nc_picture_video_error">Video is corrupted</string>
+    <string name="nc_picture_confirm">Confirm</string>
+    <string name="nc_picture_original_image">Original</string>
+    <string name="nc_picture_original_image_size">Original (%1$s)</string>
+    <string name="nc_picture_send">Send</string>
+    <string name="nc_picture_send_num">Send</string>
+    <string name="nc_picture_select">Select</string>
+    <string name="nc_picture_data_exception">Unable to load album data...</string>
+    <!-- End of picture selector strings -->
+
+
+
+    <string name="nc_conversation_remote_side_is_typing">Typing &#046;&#046;&#046;</string>
+    <string name="nc_conversation_remote_side_speaking">Speaking &#046;&#046;&#046;</string>
+
+    <string name="nc_mention_messages">@%s</string>
+    <string name="nc_media_upload_error">Unable to upload a 0 KB file</string>
+    <string name="nc_load_local_message">Network error. View local chat history?</string>
+
+    <string name="nc_message_too_long">Message is too long to send</string>
+    <string name="nc_gif_message_too_large">GIF is too large to send</string>
+    <string name="nc_upload_file_too_large">File is too large to upload</string>
+
+    <string name="nc_recalled_message">Delete a message</string>
+
+
+    <string name="nc_gender_man">Male</string>
+    <string name="nc_gender_female">Female</string>
+    <!-- group features -->
+    <string name="nc_input_length_invalid">Must be 1-64 characters</string>
+    <string name="nc_create_group_failure">Unable to create group</string>
+
+    <string name="nc_group_info">Group info (%d)</string>
+    <string name="nc_group_members_label">Members (%d)</string>
+    <string name="nc_my_nickname_in_group">My nickname in group</string>
+    <string name="nc_dissolve_group">Dismiss group</string>
+
+
+    <string name="nc_nickname_label">Nickname</string>
+    <string name="nc_nickname_hint">Enter a nickname</string>
+
+
+
+
+    <string name="nc_leave_group">Leave group</string>
+
+    <string name="nc_admin">Admin</string>
+    <string name="nc_group_owner">Owner</string>
+
+    <string name="nc_edit_permission">Only the owner and admins can edit</string>
+
+    <string name="nc_set_remark_name">Set nickname</string>
+
+    <string name="nc_group_dismiss_success">Group dismissed</string>
+    <string name="nc_group_dismiss_failed">Unable to dismiss group</string>
+    <string name="nc_group_quit_success">Left group</string>
+    <string name="nc_group_quit_failed">Unable to leave the group</string>
+    <string name="nc_set_success">Saved</string>
+    <string name="nc_set_failed">Unable to save</string>
+    <string name="nc_group_members_kick_success">Member removed</string>
+    <string name="nc_group_members_kick_failed">Unable to remove member</string>
+    <string name="nc_invite_join_group_success">Invitation sent</string>
+    <string name="nc_invite_join_group_failed">Unable to send invitation</string>
+
+    <string name="nc_group_notice_success">Announcement posted</string>
+    <string name="nc_group_notice_failed">Unable to post announcement</string>
+
+    <string name="nc_group_name_cannot_be_empty">Group name can\'t be empty</string>
+    <string name="nc_no_permission_to_modify_group_info">No permission to modify group info</string>
+    <string name="nc_max_group_members_selection">You can select up to %d members</string>
+
+
+    <string name="nc_set_nick_name">Change nickname</string>
+    <string name="nc_add_as_friend">Add Friends</string>
+    <string name="nc_reject_request">Decline request</string>
+    <string name="nc_passed">Accepted</string>
+    <string name="nc_reject">Decline</string>
+    <string name="nc_friend_nickname_hint">Add a nickname</string>
+    <string name="nc_remark">Nickname</string>
+    <string name="nc_unknow_type">Unknown</string>
+    <string name="nc_add_friend_hint">Add a message (optional)</string>
+    <string name="nc_send_apply_success">Friend request sent</string>
+    <string name="nc_send_apply_fail">Unable to send friend request</string>
+    <string name="nc_delete_friend_title">Delete contact "%1$s" and clear your chat history with them</string>
+
+    <string name="nc_just_now">Just Now</string>
+    <string name="nc_within_three_days">Within three days</string>
+    <string name="nc_three_days_ago">Three days ago</string>
+
+    <string name="nc_rejected">Declined</string>
+    <string name="nc_expired">Expired</string>
+    <string name="nc_added">Added</string>
+    <string name="nc_waiting">Pending verification</string>
+    <string name="nc_app_id">App ID</string>
+    <string name="nc_request_add_friend">Add friend request</string>
+
+    <!--5.12.2-->
+    <string name="nc_add_success">Added</string>
+    <string name="nc_add_failed">Unable to add</string>
+    <string name="nc_remove_success">Removed</string>
+    <string name="nc_remove_failed">Unable to remove</string>
+    <string name="nc_group_transfer_success">Ownership transferred</string>
+    <string name="nc_group_transfer_failed">Transfer failed</string>
+    <string name="nc_invite_confirm_failed">Unable to accept invitation</string>
+    <string name="nc_invite_reject_failed">Unable to decline invitation</string>
+
+    <string name="nc_group_permission_owner_only">Group owner</string>
+    <string name="nc_group_permission_owner_and_admins">Owner and admins</string>
+    <string name="nc_group_permission_all">Everyone</string>
+    <string name="nc_group_edit_permission_owner_only">Only the owner can edit</string>
+    <string name="nc_invite_join_group_send">Invitation sent. They can join after accepting.</string>
+    <string name="nc_invite_join_group_send_need_manange">Invitation sent. An admin must approve it before they join.</string>
+
+    <string name="nc_group_transfer_hint">Make "%1$s" the new owner? You\'ll lose owner access.</string>
+    <string name="nc_remove_manager_hint">Remove "%1$s" from admins?</string>
+    <string name="nc_remove_follow_hint">Remove "%1$s" from favorites? You won\'t get highlighted alerts for their messages anymore.</string>
+    <string name="nc_publish_announcement_hint">This announcement will notify all members. Post it?</string>
+
+    <string name="nc_group_nickname">Nickname in group</string>
+
+    <string name="nc_group_follows">Special Attention</string>
+    <string name="nc_group_mention_all_members">all</string>
+
+    <string name="nc_joined">Joined</string>
+    <string name="nc_invitee_pending">Invitee pending</string>
+    <string name="nc_manager_pending">Admin pending</string>
+    <string name="nc_manager_rejected">Admin declined</string>
+    <string name="nc_invitee_rejected">Invitee declined</string>
+
+    <string name="nc_all_requests">All requests</string>
+    <string name="nc_pending_confirmation">Pending</string>
+    <string name="nc_completed">Done</string>
+    <string name="nc_group_application_sent">Request to join sent</string>
+    <string name="nc_group_invitation_sent">You invited %1$s</string>
+    <string name="nc_group_invitation_received_inviter">%1$s invited you</string>
+    <string name="nc_group_application_received_invitation">%1$s invited %2$s</string>
+    <string name="nc_group_application_received_request">%1$s requested to join</string>
+
+    <string name="nc_remove">Remove</string>
+    <string name="nc_loading_saving">Saving...</string>
+    <string name="nc_content_contain_sensitive">Action failed. Content contains sensitive information</string>
+    <!--5.12.2-->
+
+    <!--Speech to Text-->
+    <string name="nc_cancel_speech_to_text">Cancel transcription</string>
+    <string name="nc_speech_to_text_failed">Transcription failed</string>
+    <string name="nc_speech_to_text_network_error">Network unavailable. Check your connection and try again.</string>
+    <string name="nc_speech_to_text_unsupported_format">This voice message can\'t be transcribed</string>
+    <string name="nc_copy">Copy</string>
+    <!--Speech to Text-->
+
+    <!--  NewUIDesign  -->
+    <string name="nc_set_top">Pin</string>
+    <string name="nc_delete_for_me">Delete for me</string>
+    <string name="nc_recall">Delete for everyone</string>
+    <string name="nc_delete">Delete</string>
+    <string name="nc_reference">Quote</string>
+    <string name="nc_edit">Edit</string>
+    <string name="nc_multi_select">Multi-select</string>
+    <!--  NewUIDesign  -->
+
+
+    <string name="nc_plugin_sight">Camera</string>
+    <string name="nc_sight_reminder">Hold to record a video</string>
+    <string name="nc_sight_download_failed">Download failed. Tap to retry.</string>
+    <string name="nc_sight_record_too_short_time">Recording too short. Try again.</string>
+    <string name="nc_save_video">Save video</string>
+    <string name="nc_save_video_success">Video saved</string>
+    <string name="nc_sight_file_expired">Video was deleted or expired</string>
+    <string name="nc_video_play_error_open_system_player">Unable to play this video. Open it in your system player?</string>
+
+    <!-- Keys restored from git history - referenced in code/layouts but were accidentally deleted -->
+    <string name="nc_picsel_selected_max_time_span_with_param">Unable to share videos longer than %s minutes</string>
+    <string name="nc_picsel_selected_max_second_span_with_param">Unable to share videos longer than %s seconds</string>
+    <string name="nc_join_chatroom_failure">Unable to join the open channel</string>
+    <string name="nc_exceeded_max_limit_100">You can select up to 100 chat records</string>
+    <string name="nc_delete_friend_success">Friend deleted</string>
+    <string name="nc_delete_friend_failed">Unable to delete friend</string>
+    <string name="nc_reject_success">Declined</string>
+    <string name="nc_action_bar_back">Back</string>
+    <string name="nc_action_bar_ok">OK</string>
+    <string name="nc_conversation_list_empty_prompt">No chats yet</string>
+    <string name="nc_you_recalled_edit">Edit again</string>
+    <string name="nc_edit_status_expired">Edit expired</string>
+    <string name="nc_send">Send</string>
+    <string name="nc_clear">Clear</string>
+    <string name="nc_search">Search</string>
+    <string name="nc_ext_common_phrase">Quick replies</string>
+    <string name="nc_mention_title_choose_members">Select friends</string>
+    <string name="nc_choose_members">Select members</string>
+    <string name="nc_combine_load_failed">Unable to load forwarded messages</string>
+    <string name="nc_accept">Accept</string>
+    <string name="nc_expand">Expand</string>
+    <string name="nc_sight_list_title">Chat files</string>
+    <string name="nc_read_receipt_status">read</string>
+    <string name="nc_new_friends">New friends</string>
+    <string name="nc_create_group">New group</string>
+    <string name="nc_group_name_hint">Enter a group name</string>
+    <string name="nc_group_name">Group name</string>
+    <string name="nc_friends">Friends</string>
+    <string name="nc_search_friends">Friend searching</string>
+    <string name="nc_add_friend">Add friends</string>
+    <string name="nc_user_does_not_exist">This user does not exist</string>
+    <string name="nc_group_no_special_attention">No favorites yet</string>
+    <string name="nc_no_data">No data</string>
+    <string name="nc_group_management">Manage group</string>
+    <string name="nc_group_managers">Admins</string>
+    <string name="nc_group_add_member">Add members</string>
+    <string name="nc_my_groups">My groups</string>
+    <string name="nc_user_not_found">No users found</string>
+    <string name="nc_group_avatar">Group avatar</string>
+    <string name="nc_group_announcement">Group announcement</string>
+    <string name="nc_nickname_description">This nickname is visible to everyone in the group</string>
+    <string name="nc_group_notice_hint">Enter an announcement</string>
+    <string name="nc_empty_notice">No announcement yet</string>
+    <string name="nc_group_title">Group name</string>
+    <string name="nc_group_remark">Group alias</string>
+    <string name="nc_group_name_edit">Edit group name</string>
+    <string name="nc_group_mention_title">Select people to mention</string>
+    <string name="nc_group_add_manager">Add admins</string>
+    <string name="nc_group_select_member">Select members</string>
+    <string name="nc_group_edit_info_permission">Who can edit group info</string>
+    <string name="nc_group_add_member_permission">Who can add members</string>
+    <string name="nc_group_remove_member_permission">Who can remove members</string>
+    <string name="nc_group_edit_member_info_permission">Who can edit member info</string>
+    <string name="nc_group_invitation_confirmation">Admin approval</string>
+    <string name="nc_group_transfer">Transfer ownership</string>
+    <string name="nc_chat_pin">Pin</string>
+    <string name="nc_notification_mute">Mute notifications</string>
+    <string name="nc_loadmore_loading">Loading...</string>
+    <string name="nc_message_read_receipt_status">Read receipts</string>
+    <string name="nc_user_info">Profile</string>
+    <string name="nc_head">Avatar</string>
+    <string name="nc_app">Application number</string>
+    <string name="nc_gender">Gender</string>
+    <string name="nc_remove_member">Remove member</string>
+    <string name="nc_user_profile">User profile</string>
+    <string name="nc_gender_edit">Edit gender</string>
+    <string name="nc_start_chat">Chat</string>
+    <string name="nc_start_audio">Voice call</string>
+    <string name="nc_start_video">Video call</string>
+    <string name="nc_delete_friend">Delete friend</string>
+    <string name="nc_all_friend_request">All friend requests</string>
+    <string name="nc_my_received_request">Received requests</string>
+    <string name="nc_my_sent_request">Sent requests</string>
+    <string name="nc_group_member_remark">Member nickname</string>
+    <string name="nc_group_note_hint">Enter a group alias</string>
+    <string name="nc_group_notification">Group notifications</string>
+    <string name="nc_group_transfer_title">Transfer group</string>
+    <string name="nc_item_divided_string">, </string>
+    <string name="nc_item_invitation"> invited</string>
+    <string name="nc_item_you">you</string>
+    <string name="nc_item_you_invitation">You invited</string>
+    <string name="nc_item_you_remove_self">You were removed by</string>
+    <string name="nc_item_remove_group_member">removed</string>
+    <string name="nc_item_remove">from the group</string>
+    <string name="nc_item_join_group">joined the group</string>
+    <string name="nc_item_created_group">created the group</string>
+    <string name="nc_item_you_created_group">You created the group</string>
+    <string name="nc_item_dismiss_groups"> dismissed the group</string>
+    <string name="nc_item_quit_groups"> left the group</string>
+    <string name="nc_item_change_group_name">changed the group name to </string>
+    <string name="nc_reference_link">[RichContent]</string>
+    <string name="nc_message_content_mentioned">[@You]</string>
+
+</resources>

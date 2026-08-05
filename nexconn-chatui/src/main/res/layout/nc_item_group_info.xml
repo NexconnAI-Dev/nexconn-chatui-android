@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nc_bg_item"
+    android:orientation="vertical"
+    tools:theme="@style/NCLivelyLightTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/nc_margin_size_16"
+        android:paddingTop="11dp"
+        android:paddingEnd="@dimen/nc_margin_size_16"
+        android:paddingBottom="11dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"
+            android:src="?attr/nc_conversation_list_cell_portrait_msg_img" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textDirection="locale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nc_margin_size_12"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="?attr/nc_text_primary_color"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/nc_line_background_color" />
+
+</LinearLayout>
