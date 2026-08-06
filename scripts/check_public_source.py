@@ -12,14 +12,12 @@ from typing import List, Optional
 
 REQUIRED_FILES = (
     ".gitignore",
-    ".github/workflows/android.yml",
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
     "CHANGELOG.md",
-    "CONTRIBUTING.md",
     "LICENSE",
     "NOTICE",
     "README.md",
     "RELEASE_METADATA.json",
-    "SECURITY.md",
     "SOURCE_COMMIT",
     "build.gradle",
     "docs/source-integration.md",
@@ -254,6 +252,7 @@ def validate_source(
         expected = {
             "license": "Apache-2.0",
             "chatui_version": version,
+            "chat_sdk_version": version,
             "upstream_job": upstream_job,
             "upstream_build": build_number,
             "release_type": release_type,
@@ -261,8 +260,6 @@ def validate_source(
         for key, expected_value in expected.items():
             if metadata.get(key) != expected_value:
                 raise PublicSourceError(f"RELEASE_METADATA.json field mismatch: {key}")
-        if not metadata.get("chat_sdk_version"):
-            raise PublicSourceError("RELEASE_METADATA.json is missing chat_sdk_version")
         if not SHA_RE.fullmatch(str(metadata.get("source_commit", ""))) or not SHA_RE.fullmatch(
             str(metadata.get("imkit_baseline", ""))
         ):
@@ -312,14 +309,6 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
     parser.add_argument("--upstream-build")
     parser.add_argument("--release-type")
     parser.add_argument("--allow-root-git", action="store_true")
-    parser.add_argument(
-        "--contribution",
-        action="store_true",
-        help=(
-            "keep public safety checks but skip source provenance and digest checks "
-            "that only apply to release snapshots"
-        ),
-    )
     return parser.parse_args(argv)
 
 
@@ -335,7 +324,6 @@ def main(argv: Optional[List[str]] = None) -> int:
             args.upstream_build or str(metadata.get("upstream_build", "")),
             args.release_type or str(metadata.get("release_type", "")),
             allow_root_git=args.allow_root_git,
-            verify_release_integrity=not args.contribution,
         )
         print(f"public source validation passed: {source}")
         return 0

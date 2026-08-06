@@ -4,8 +4,8 @@
   "imkit_baseline": "b11fa0c6f3dd2df199c47e825c596d1aef440ee3",
   "license": "Apache-2.0",
   "release_type": "Dev",
-  "source_commit": "fc465708a956b058cb6150d4aec9c56199b8403f",
-  "source_digest": "e29c79d6c5a3769cb6e1732d01080ca545e7d8c8d44214fffc30a9c752e211aa",
+  "source_commit": "f3e02123efc0197d1d13dad6a28c9b7ec34e0ba8",
+  "source_digest": "8bd9f1ab0f9134ce4d1f2bafbf311292bc730ccff19497b010dacff2ee51aa88",
   "upstream_build": 74,
   "upstream_job": "Android/Android-Nexconn-SDK"
 }
