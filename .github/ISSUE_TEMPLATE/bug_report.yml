@@ -1,0 +1,98 @@
+name: Bug report
+description: Report a reproducible problem in Nexconn ChatUI for Android
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, private user data, or unpatched security vulnerabilities. Report security issues privately to support@nexconn.ai.
+  - type: input
+    id: version
+    attributes:
+      label: ChatUI version
+      description: Enter the exact ChatUI release version.
+      placeholder: 26.3.0
+    validations:
+      required: true
+  - type: dropdown
+    id: integration
+    attributes:
+      label: Integration method
+      options:
+        - Maven dependency
+        - Source integration
+    validations:
+      required: true
+  - type: input
+    id: android-version
+    attributes:
+      label: Android version
+      placeholder: Android 15
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device or emulator
+      placeholder: Pixel 8 emulator
+    validations:
+      required: true
+  - type: textarea
+    id: toolchain
+    attributes:
+      label: Build toolchain
+      description: Include Gradle, Android Gradle Plugin, compile/target SDK, and matching Nexconn Chat SDK versions.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include host app configuration, application minSdk, and other relevant dependency versions.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what happened and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reproducible example and exact steps.
+    validations:
+      required: true
+  - type: textarea
+    id: minimal_reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide a minimal code sample or a link to a small reproducible project. Remove credentials and private data.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Optional. Remove credentials, tokens, private URLs, and personal data.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: I removed credentials, private data, and unpatched security details.
+          required: true

@@ -12,6 +12,7 @@ remains subject to its own license.
 - [Sign up](https://console.nexconn.ai/agile/register) to create a Nexconn app
   and obtain an App Key.
 - [Nexconn documentation](https://docs.nexconn.ai)
+- [Release notes](https://docs.nexconn.ai/chatui-android/release-notes)
 - [Nexconn Chat UI](https://www.nexconn.ai/product/chat#ui-showcase)
 - [Source integration](docs/source-integration.md)
 - [Version compatibility](docs/version-compatibility.md)
@@ -34,15 +35,27 @@ server-side token service; do not commit them to this repository.
 
 ## Core Features
 
-- AndroidX-based Activities, Fragments, ViewModels, adapters, and configurable
-  UI components.
+Together with the matching Nexconn Chat SDK, server-side services, and platform
+services, ChatUI can be used in chat experiences with the following product
+capabilities:
+
+- **User Management**: Manage user profiles and relationships, including blocking and banning workflows.
+- **User Presence**: Track online, offline, and custom user states in real time.
+- **Message Read Receipts**: Synchronize message read status across devices.
+- **Rich Message Types**: Support text, emoji, images, voice, video, files, and custom messages.
+- **Message Operations**: Send, delete, edit, reply to, forward, search, and retrieve message history.
+- **Real-time Webhooks**: Receive message, user, and group events through Nexconn server-side services.
+- **Broadcast Announcements**: Send targeted announcements through Nexconn platform services.
+- **Moderation & Safety**: Review content and identify risks through Nexconn moderation services.
+
+The Android UI layer directly provides:
+
+- AndroidX-based Activities, Fragments, ViewModels, adapters, and configurable UI components.
 - Channel list and channel screens backed by Nexconn Chat models and operations.
-- Message rendering and input extensions for text, media, voice, mentions,
-  replies, forwarding, retry, editing, and combined messages.
-- Image selection, media preview, voice and short-video components.
+- Message rendering and input extensions for text, media, voice, mentions, replies, forwarding, retry, editing, and combined messages.
+- Image selection, media preview, voice, and short-video components.
 - Local notifications plus user, friend, and group management screens.
-- Fragment factories, route replacement, resource overrides, and configuration
-  APIs for UI customization.
+- Fragment factories, route replacement, resource overrides, and configuration APIs for UI customization.
 
 ## Installation
 
@@ -60,9 +73,21 @@ cd nexconn-chatui-android
 ./gradlew :nexconn-chatui:assembleRelease --no-daemon
 ```
 
+This repository does not include a sample application or runnable demo. The
+command above checks that the exported ChatUI source compiles; it does not
+validate application initialization, connection, messaging, media, runtime
+permissions, or host integration flows.
+
 The standalone build must not require a private Git repository, private build
 credentials, or a private `:nexconn-chat` project. The required Nexconn Chat
 SDK version is recorded in `gradle.properties` and `RELEASE_METADATA.json`.
+
+## Internationalization
+
+The current ChatUI source includes default, English, and Arabic string
+resources and declares RTL layout support. Other language coverage is not
+implied by this repository; verify the host application's locale and merged
+resources when integrating ChatUI.
 
 ## Quick Start
 
@@ -121,12 +146,16 @@ conflict with providers in the host application.
 - [Version compatibility](docs/version-compatibility.md)
 - [Nexconn documentation](https://docs.nexconn.ai)
 
-## Contributing
+## Feedback and Support
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Public contributions are reviewed and
-then applied to the private authoritative source before the next deterministic
-export. Do not include credentials, private URLs, generated build output,
-Sample applications, or Demo applications in a pull request.
+Direct source contributions and pull requests are not accepted. Use the GitHub
+Bug Report template for reproducible ChatUI defects. Feature requests are not accepted
+in this repository.
+
+Do not report unpatched security vulnerabilities in a public issue. Send a
+private report to [support@nexconn.ai](mailto:support@nexconn.ai) and include
+the affected version, impact, and reproduction details without production
+credentials or personal data.
 
 ## License
 
